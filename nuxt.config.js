@@ -5,7 +5,7 @@ export default {
   dev: process.env.NODE_ENV !== 'production',
 
   env: {
-    baseUrl: process.env.NODE_ENV === 'production' ? 'https://laundryluv.com' : 'http://localhost:3000'
+    baseUrl: process.env.NODE_ENV === 'production' ? 'https://operationgetout.com' : 'http://localhost:3000'
   },
 
   head: {
@@ -61,7 +61,7 @@ export default {
     '@nuxtjs/google-fonts',
     '@nuxtjs/svg',
     ['@nuxtjs/google-analytics', {
-      id: 'UA-146444538-1'
+      id: 'XX-XXXXXXXX-X'
     }]
   ],
 
@@ -88,7 +88,7 @@ export default {
   },
 
   gtm: {
-    id: 'GTM-PCF86SJ',
+    id: 'XXX-XXXXXXX',
     debug: true
   },
 
