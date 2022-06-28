@@ -43,7 +43,7 @@ b-navbar.px-0(
       b-nav-item(
         to="/contact"
       ) Connect
-      b-btn Donate
+  b-btn.mr-4 Donate
 
 </template>
 

@@ -12,6 +12,55 @@
             h1.text-white Headline about OGO’s Mission
             p.text-white Support description about mission and how you can immediately get involved with our latest endeavor and fundraiser
 
+    section.banner
+      b-container
+        b-row
+          b-col
+            .bg-secondary.px-5.py-4
+              b-row.text-white(
+                align-v="center"
+              )
+                b-col(
+                  cols="12"
+                  md="8"
+                  lg="9"
+                )
+                  h2.h4 Headline about Current Fundraiser
+                  p Description of current fundraiser and summary of how to get involved and donate to specific fundraiser as well as immediate goals and effect it will have…
+                b-col(
+                  cols="12"
+                  md="4"
+                  lg="3"
+                )
+                  b-btn(
+                    variant="primary"
+                  ) Donate
+
+    section.who-we-are
+      b-container
+        b-row.mb-5(
+          align-h="center"
+        )
+          b-col.text-center(
+            cols="12"
+            md="10"
+          )
+            h2.text-tertiary Who We Are
+            p.text-tertiary As a 501c3 non-profit, we have a collective passion to provide nature and Blue Mind water experiences, events and equipment to intentionally utilize the evidence-based, therapeutic benefits of being in, near, and on the water and in nature for positive mental, emotional and physical wellness impact.
+
+        .how-we-do-it.bg-primary.py-5.text-center
+          h3.text-white.mb-4 How we do it
+          b-row
+            b-col(
+              cols="12"
+              md="4"
+              v-for="n in 3"
+            )
+              .bg-white.text-center.px-4.py-5.mb-4
+                h3.h5.text-primary Events
+                p.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                b-btn See Events
+
     section.about
       b-container
         b-row(
@@ -34,19 +83,22 @@
       b-container
         b-row
           b-col.text-center
-            h3.text-white Testimonials
+            h3.text-white.mb-4 Testimonials
 
         b-row
           b-col(
+            v-for="n in 3"
             cols="12"
             md="6"
             lg="4"
           )
-            .bg-white
+            TestimonialCard
 
     section.resources
       b-container
-        b-row
+        b-row(
+          align-v="center"
+        )
           b-col(
             cols="12"
             md="6"
@@ -60,6 +112,17 @@
               strong A $30 donation includes signed copy of Blue Mind book, Operation Get Out #LetTheWaterMoveYou silicone bracelet, Blue Marble talisman, and shipping.
 
             b-btn Buy the Book
+          b-col(
+            cols="12"
+            md="6"
+            offset-lg="1"
+          )
+            b-embed(
+              type="iframe"
+              aspect="16by9"
+              src="https://www.youtube.com/embed/2ANB5nDW9q8"
+              allowfullscreen
+            )
 
     section.events(
       style="background-color: #F2F5F7"
@@ -68,7 +131,11 @@
         b-row
           b-col.text-center
             .eyebrow Events
-            h2.text-tertiary Upcoming Events
+            h2.text-tertiary.mb-5 Upcoming Events
+
+        b-row
+          b-col
+            EventCard
 
     section.community
       b-container
@@ -139,11 +206,59 @@
                     type="submit"
                     variant="primary"
                   ) Submit
+
+            b-row
+              b-col(
+                cols="auto"
+              )
+                h4.text-tertiary #OpGetOut
+
+              b-col(
+                cols="auto"
+              )
+                b-icon(
+                  icon="facebook"
+                  block
+                )
 </template>
 
 <style lang="scss" scoped>
 .hero-row {
   min-height: 600px;
+}
+
+section.banner {
+  margin-top: -80px;
+}
+
+section.who-we-are {
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  .how-we-do-it {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 100%;
+      background-color: $primary;
+      position: absolute;
+      top: 0;
+      right: -100px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 100%;
+      background-color: $primary;
+      position: absolute;
+      top: 0;
+      left: -100px;
+    }
+  }
 }
 
 section.about {
@@ -153,7 +268,7 @@ section.about {
 
 section.testimonials {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 section.resources {
