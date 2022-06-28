@@ -1,0 +1,55 @@
+$font-family-base: 'Barlow', sans-serif;
+$primary: #3CB5CD;
+$secondary: #D76E5F;
+$tertiary: #004883;
+$bitter: 'Bitter', serif;
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  tertiary: $tertiary,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 640px,
+  lg: 992px,
+  xl: 1440px,
+  xxl: 1920px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1650px
+);
+
+$font-size-base: 1rem;
+$font-weight-base: 400;
+$line-height-base: 1.75;
+$link-decoration: underline;
+
+$body-color:#424B5A;
+$link-color: $secondary;
+
+$headings-color: $primary;
+$headings-font-weight: 400;
+
+$btn-font-weight: 400;
+
+$input-btn-font-size: 14px;
+$input-btn-padding-y: 4px;
+$input-btn-padding-x: 26px;
+
+
+$input-bg: $white;
+$input-border-color: #C2D1D9;
+$input-padding-x: 15px;
+$input-padding-y: 15px;
+
+$btn-font-size: $input-btn-font-size;
+$btn-padding-y: 8px;
+$btn-padding-x: 12px;

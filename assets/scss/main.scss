@@ -1,0 +1,77 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+
+a {
+  text-transform: uppercase;
+}
+
+p a {
+  text-transform: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 1.05px;
+  min-width: 165px;
+
+  &.btn-secondary,
+  &.btn-tertiary {
+    color: white;
+  }
+}
+
+.font-weight-semibold {
+  font-weight: 600 !important;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-size: 21px;
+}
+
+
+h1, .h1 {
+  font-weight: 400;
+  font-size: 66px;
+}
+
+h2, .h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+h3, .h3 {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+h4, .h4 {
+  font-size: 24px;
+  font-family: $bitter;
+  font-weight: bold;
+}
+
+h5, .h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: $bitter;
+}
+
+.bitter {
+  font-family: $bitter;
+}
+
+.link-reset {
+  color: unset;
+}
+
+.headings-font-family {
+  font-family: $headings-font-family;
+}
+.body-font-family {
+  font-family: $font-family-base;
+}
+
+.mb-45 {
+  margin-bottom: 2.25rem;
+}
