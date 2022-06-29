@@ -156,73 +156,100 @@
             cols="12"
             md="6"
           )
-            h2.text-tertiary Connect with us
-            b-row
-              b-col(
-                cols="12"
-                md="6"
-              )
-                b-form-group
-                  b-form-input(
-                    type="text"
-                    placeholder="First Name"
-                  )
-              b-col(
-                cols="12"
-                md="6"
-              )
-                b-form-group
-                  b-form-input(
-                    type="text"
-                    placeholder="Last Name"
-                  )
-              b-col(
-                cols="12"
-                md="6"
-              )
-                b-form-group
-                  b-form-input(
-                    type="text"
-                    placeholder="Email"
-                  )
-              b-col(
-                cols="12"
-                md="6"
-              )
-                b-form-group
-                  b-form-input(
-                    type="text"
-                    placeholder="I'm interested in..."
-                  )
-              b-col(
-                cols="12"
-              )
-                b-form-group
-                  b-form-textarea.mb-4(
-                    placeholder="Write Something..."
-                    no-resize
-                    rows="6"
-                  )
-
-                  b-btn(
-                    type="submit"
-                    variant="primary"
-                  ) Submit
-
-            b-row
-              b-col(
-                cols="auto"
-              )
-                h4.text-tertiary #OpGetOut
-
-              b-col(
-                cols="auto"
-              )
-                b-icon(
-                  icon="facebook"
-                  block
+            h2.text-tertiary.mb-5 Connect with us
+            b-form(
+              name="connect"
+              method="POST"
+              data-netlify="true"
+            )
+              b-row
+                b-col(
+                  cols="12"
+                  md="6"
                 )
+                  b-form-group
+                    b-form-input(
+                      type="text"
+                      placeholder="First Name"
+                    )
+                b-col(
+                  cols="12"
+                  md="6"
+                )
+                  b-form-group
+                    b-form-input(
+                      type="text"
+                      placeholder="Last Name"
+                    )
+                b-col(
+                  cols="12"
+                  md="6"
+                )
+                  b-form-group
+                    b-form-input(
+                      type="text"
+                      placeholder="Email"
+                    )
+                b-col(
+                  cols="12"
+                  md="6"
+                )
+                  b-form-group
+                    b-form-select(
+                      v-model='selected'
+                      :options='options'
+                      placeholder="I'm interested in..."
+                    )
+                b-col(
+                  cols="12"
+                )
+                  b-form-group
+                    b-form-textarea.mb-4(
+                      placeholder="Write Something..."
+                      no-resize
+                      rows="6"
+                    )
+
+                    b-btn(
+                      type="submit"
+                      variant="primary"
+                    ) Submit
+
+              b-row
+                b-col(
+                  cols="auto"
+                )
+                  h4.text-tertiary #OpGetOut
+
+                b-col(
+                  cols="auto"
+                )
+                  b-icon(
+                    icon="facebook"
+                    block
+                  )
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      selected: null,
+      options: [
+        { value: null, text: 'I\'m interested in...' },
+        { value: 'Event Information', text: 'Event Information' },
+        { value: 'Sponsorship opportunities', text: 'Sponsorship opportunities' },
+        { value: 'Donating Equipment and Food', text: 'Donating Equipment and Food' },
+        { value: 'Hosting a Get Out', text: 'Hosting a Get Out' },
+        { value: 'Volunteering', text: 'Volunteering' },
+        { value: 'Corporate Wellness Alignment', text: 'Corporate Wellness Alignment' },
+        { value: 'All of the Above', text: 'All of the Above' },
+        { value: 'Other', text: 'Other' }
+      ]
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .hero-row {
