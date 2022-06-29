@@ -1,5 +1,5 @@
 <template lang="pug">
-.testimonial
+.testimonial.mb-4.mb-md-0
   p.quote Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.
   p.attribution @Ralph_Keller
   p.title Job Title

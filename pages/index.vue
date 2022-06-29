@@ -48,18 +48,20 @@
             h2.text-tertiary Who We Are
             p.text-tertiary As a 501c3 non-profit, we have a collective passion to provide nature and Blue Mind water experiences, events and equipment to intentionally utilize the evidence-based, therapeutic benefits of being in, near, and on the water and in nature for positive mental, emotional and physical wellness impact.
 
-        .how-we-do-it.bg-primary.py-5.text-center
-          h3.text-white.mb-4 How we do it
-          b-row
-            b-col(
-              cols="12"
-              md="4"
-              v-for="n in 3"
-            )
-              .bg-white.text-center.px-4.py-5.mb-4
-                h3.h5.text-primary Events
-                p.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                b-btn See Events
+      .how-we-do-it-container
+        b-container
+          .how-we-do-it.py-5.text-center
+            h3.text-white.mb-4 How we do it
+            b-row
+              b-col(
+                cols="12"
+                md="4"
+                v-for="n in 3"
+              )
+                .bg-white.text-center.px-4.py-5.mb-4
+                  h3.h5.text-primary Events
+                  p.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                  b-btn See Events
 
     section.about
       b-container
@@ -99,7 +101,7 @@
         b-row(
           align-v="center"
         )
-          b-col(
+          b-col.mb-4.mb-md-0(
             cols="12"
             md="6"
             lg="5"
@@ -237,26 +239,36 @@ section.who-we-are {
 
   .how-we-do-it {
     position: relative;
-    &::after {
-      content: "";
-      display: block;
-      width: 100px;
-      height: 100%;
-      background-color: $primary;
-      position: absolute;
-      top: 0;
-      right: -100px;
-    }
+    background-color: $primary;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 100px;
-      height: 100%;
+    @include media-breakpoint-up(lg) {
+      &::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100%;
+        background-color: $primary;
+        position: absolute;
+        top: 0;
+        right: -100px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100%;
+        background-color: $primary;
+        position: absolute;
+        top: 0;
+        left: -100px;
+      }
+    }
+  }
+
+  .how-we-do-it-container {
+    @include media-breakpoint-down(md) {
       background-color: $primary;
-      position: absolute;
-      top: 0;
-      left: -100px;
     }
   }
 }

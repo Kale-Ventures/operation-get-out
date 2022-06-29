@@ -5,7 +5,7 @@
     )
       b-row
         b-col
-          p.text-right.mb-0 Copyright {{new Date().getFullYear()}} &copy; All Rights Reserved. Operation Get Out.
+          p.text-center.text-lg-right.mb-0 Copyright {{new Date().getFullYear()}} &copy; All Rights Reserved. Operation Get Out.
 </template>
 
 <script>

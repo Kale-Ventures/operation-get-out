@@ -1,12 +1,14 @@
 <template lang="pug">
 .bg-white
   b-row
-    b-col.image(
+    b-col(
       cols="12"
       md="5"
       lg="4"
-      style="background-image: url('https://picsum.photos/seed/srgj/400')"
     )
+      .image(
+        style="background-image: url('https://picsum.photos/seed/srgj/400')"
+      )
 
     b-col(
       cols="12"
