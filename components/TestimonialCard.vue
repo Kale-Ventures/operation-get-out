@@ -1,11 +1,11 @@
 <template lang="pug">
-.testimonial.mb-4.mb-md-0.fill-height
+.testimonial.mb-4.mb-md-0.fill-height.d-flex.flex-column.text-center.align-items-center
   b-img.mb-5(
     src="/images/quote.svg"
     width="30"
   )
   p.quote {{ testimonial.quote }}
-  p.attribution {{ testimonial.attribution }}
+  p.attribution.mt-auto {{ testimonial.attribution }}
   p.title(v-if="testimonial.title") {{ testimonial.title}}
 
 </template>

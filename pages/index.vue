@@ -17,25 +17,27 @@
       b-container
         b-row
           b-col
-            .bg-secondary.px-5.py-4
+            .bg-secondary
               b-row.text-white(
-                align-v="center"
+                align-v="stretch"
+                no-gutters
               )
+                b-col.callout(
+                  cols="12"
+                  md="4"
+                )
                 b-col(
                   cols="12"
                   md="8"
-                  lg="9"
                 )
-                  h2.h4 Headline about Current Fundraiser
-                  p Description of current fundraiser and summary of how to get involved and donate to specific fundraiser as well as immediate goals and effect it will have…
-                b-col(
-                  cols="12"
-                  md="4"
-                  lg="3"
-                )
-                  b-btn(
-                    variant="primary"
-                  ) Donate
+                  .p-5
+                    h3.h5
+                      em OpGetOut is partnering with The Move, WeDu &amp; Mellow Johnny’s
+                    h2.h4 Bikes for Kids Uvalde supporting Robb Elementary
+                    p Let’s help kids be kids by providing 750 bikes for each child attending the newly combined Flores Elementary school for the start of the school year.
+                    b-btn(
+                      variant="light"
+                    ) Donate Now
 
     section.who-we-are
       b-container
@@ -47,10 +49,10 @@
             md="10"
           )
             h2.text-tertiary Who We Are
-            p OpGetOut is a 501c3 nonprofit with deep roots and connections in the wellness, water, military, first responder, medical and philanthropic world. What began organically — providing individuals and groups opportunities to Get Out — is now an intentional, purposeful organization.
-            p.text-tertiary
+            p.h5.mb-4 OpGetOut is a 501c3 nonprofit with deep roots and connections in the wellness, water, military, first responder, medical and philanthropic world. What began organically — providing individuals and groups opportunities to Get Out — is now an intentional, purposeful organization.
+            p.text-tertiary.h5.mb-4
               strong We plan and execute experiences, events and outings that utilize evidence-based science: nature and water can be a powerful therapeutic benefit to assist individuals and agencies dealing with loss, PTS, anxiety, grief and stress.
-            p We witness the powerful unlocking and resetting that takes place when individuals are given the opportunity and tools to be empowered with the healing elements of nature and water.
+            p.h5.mb-4 We witness the powerful unlocking and resetting that takes place when individuals are given the opportunity and tools to be empowered with the healing elements of nature and water.
 
       .bg-primary
         b-container
@@ -70,8 +72,10 @@
                       fluid
                     )
                     .text-center.px-4.py-5
-                      h3.h5.text-primary Events
-                      p.text-gray Our events bring the community together to experience nature and discover wellness. Paddle boarding to hiking, find an event and register to join us for therapy through the great outdoors.
+                      h3.h5.text-primary.mb-4(
+                        style='font-size: 24px'
+                      ) Events
+                      p Our events bring the community together to experience nature and discover wellness. Paddle boarding to hiking, find an event and register to join us for therapy through the great outdoors.
                       b-btn See Events
                 b-col.mb-4(
                   cols="12"
@@ -83,32 +87,41 @@
                       fluid
                     )
                     .text-center.px-4.py-5
-                      h3.h5.text-primary Donations
-                      p.text-gray We function solely on donations and sponsorships which go directly to supporting outings, equipment, events and resources for individuals and agencies to learn how to benefit from nature and water as a validated wellness tool.
+                      h3.h5.text-primary.mb-4(
+                        style='font-size: 24px'
+                      ) Donations
+                      p We function solely on donations and sponsorships which go directly to supporting outings, equipment, events and resources for individuals and agencies to learn how to benefit from nature and water as a validated wellness tool.
                       b-btn Donate
 
     section.about
-      b-container
+      b-container.mb-5(
+        fluid='xxl'
+      )
         b-row(
           align-v="center"
         )
           b-col(
             cols="12"
             md="6"
+            xl="5"
           )
-            b-img(
+            b-img-lazy(
               fluid-grow
               src="/images/book.jpg"
+              max-width='599'
             )
           b-col(
             cols="12"
             md="6"
+            offset-xl='1'
           )
             .eyebrow Our Story
             h2.text-tertiary.mb-3 It started out of a love of the outdoors and a need to heal.
             p We have devoted our lives to bringing individuals and groups into nature and onto the water. But when we lost two Travis County female first responders within six months of each other — StarFlight nurse Kristin McLain and Senior Deputy Jessica Hollis — we were suddenly surrounded by first responders and others dealing with loss, anxiety, depression and trauma. They turned to us for nature, water and healing —  asking us to help them heal through some of the same activities Kristin and Jessica used for their own respite.
 
-      b-container
+      b-container.mt-5.mb-5(
+        fluid='xxl'
+      )
         b-row(
           align-v="center"
         )
@@ -314,25 +327,32 @@ export default {
       ],
       teamMembers: [
         {
-          name: 'Jen Allis'
+          name: 'Jen Allis',
+          bio: 'Instrumental in event planning and coordination, Jen has provided support for events since OGO’s inception. Jen has decades of experience in water sports activities and fully understands that water is medicine and being outdoors is critical to mental wellness. Jen is a Centurion Boats Water Warrior, mountain biker, trail runner, and wakesports coach. She also fulfills OGO operational roles including grant management and fundraising.'
         },
         {
-          name: 'Shelby Hollis'
+          name: 'Shelby Hollis',
+          bio: 'Shelby began her nursing career 20 years ago in the Emergency Department and now serves as a cardiac nurse at Heart Hospital of Austin. She has worked in various areas of nursing through the years and has been privileged to help others gain needed healing. While serving as a Palliative Care Nurse Coordinator at a local trauma center during the recent pandemic, she witnessed devastating losses that only highlighted her passion to continue to getting others as well herself outdoors and on the water for both physical and mental wellness.'
         },
         {
-          name: 'Ricky Hollis'
+          name: 'Ricky Hollis',
+          bio: 'Ricky is an Austin Police Officer and former paramedic and Marine. He previously served as a mental health officer while on patrol for APD and now is on the Peer Support Team. He assists with running the Austin Police Honor Guard and has an active role working with the families of fallen officers. His love for the outdoors and water has not only led him to share it with others, but also spurred him to use the art of creating custom wakesurf boards, Patriot Board Co., for mental release.'
         },
         {
-          name: 'Martha B. Marshall, M.A., LPC'
+          name: 'Martha B. Marshall, M.A., LPC',
+          bio: 'Martha Marshall is a licensed counselor who utilizes nature and water as co-therapists. Her creative approach to change might include nature as a co-therapist: a walk outdoors under the oaks, a hike, or even counseling in a paddle boarding session on Austin lakes to help get in touch with the deeper, inner-knowing and strength we all forget sometimes. Her goal in work with clients is their return to balance, new perspectives, and a welcoming of their whole, wise soul. Martha presents workshops on the mind-body connection, mindful self-compassion, and family dynamics, and leads outdoor meditation experiences. She is a NADA Acudetox Specialist and NADA Registered Trainer licensed by the Texas Medical Board for acupuncture to treat addictions. Martha has NOLS Wilderness First Aid certification.'
         },
         {
-          name: 'Winston Merrill'
+          name: 'Winston Merrill',
+          bio: 'As a former EMT and paramedic of 23 years, Winston has first-hand knowledge of the stresses encountered every day by first responders. After a career in EMS, Winston landed in the watersports industry. Living with the power of water, Winston has found water to be healing, whether you’re in it, around it or on it. He enjoys paddleboarding, wake surfing, and mountain biking on a regular basis and has a passion for sharing them with others for wellness impact. As an OGO founding member and a Centurion Boats Water Warrior, he is at each event assisting as driver, cyclist, coach and/or paddler while sharing his water story.'
         },
         {
-          name: 'Cindy Present'
+          name: 'Cindy Present',
+          bio: 'Cindy has spent a lifetime in the wellness, fitness and watersports industry. As a life coach, fitness trainer, watersports coach, cycling, running and Ironman athlete, motivator, and Wellness Director at Lake Austin Spa Resort, Cindy has inspired thousands to find improved mental, physical and emotional well-being. Her passion for taking individuals on the water and in nature to assist in moving them through difficult times to deeper levels of personal connection and clarity is embedded in all she does.'
         },
         {
-          name: 'Steve Present'
+          name: 'Steve Present',
+          bio: 'Steve has over 40 years in the marine and watersports industry and was raised in Clearlake, Texas, as the son of an Air Force and NASA test pilot for the Apollo program. When Steve’s father lost his life in a test mission, Steve’s community surrounded him by water as a way for him to connect to nature, others and himself. Steve’s immersion in the watersports world began from the roots of loss, but he has spent a lifetime passing it forward, with connection and leadership in many philanthropic causes involving the use of nature and water. Steve is an avid waterskier, wakesurfer, paddleboard and mountain biker, and has received numerous awards and recognition for his role and leadership in the watersports industry, including Centurion Boats Troy Gentry Award and Water Warrior recipient.'
         }
       ],
       events: [
@@ -370,6 +390,13 @@ export default {
 
 section.banner {
   margin-top: -80px;
+
+  .callout {
+    background-image: url('/images/bike.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 section.who-we-are {

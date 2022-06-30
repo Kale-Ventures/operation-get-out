@@ -1,19 +1,19 @@
 <template lang="pug">
-  nuxt-link(
+  a(
     v-bind="$attrs"
   )
     slot
-    | &nbsp;&gt;
+    ArrowRight.ml-2
 </template>
 
 <script>
-// import ArrowRight from '~/assets/svgs/arrow-nav-right.svg?inline'
+import ArrowRight from '~/assets/svgs/arrow-nav-right.svg?inline'
 
 export default {
-  name: 'ArrowLink'
-  // components: {
-  //   ArrowRight
-  // }
+  name: 'ArrowLink',
+  components: {
+    ArrowRight
+  }
 }
 </script>
 
@@ -21,7 +21,9 @@ export default {
 a {
   text-transform: uppercase;
   font-size: 14px;
-  color: $secondary;
+  color: $secondary !important;
   font-weight: 600;
+
+  cursor: pointer;
 }
 </style>
