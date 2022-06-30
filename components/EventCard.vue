@@ -15,14 +15,14 @@
       md="7"
       lg="8"
     )
-      .px-4.py-4
+      .px-4.py-4.d-flex.flex-column.fill-height
         h5.date {{ event.date }}
         h4 {{ event.title }}
         .mb-4
           div(
             v-html="$md.render(event.body)"
           )
-        b-row(
+        b-row.mt-auto(
           align-h="between"
         )
           b-col(

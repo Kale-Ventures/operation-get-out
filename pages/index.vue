@@ -16,7 +16,7 @@
     section.banner
       b-container
         b-row
-          b-col
+          b-col.px-0.px-md-2
             .bg-secondary
               b-row.text-white(
                 align-v="stretch"
@@ -37,6 +37,7 @@
                     p Let’s help kids be kids by providing 750 bikes for each child attending the newly combined Flores Elementary school for the start of the school year.
                     b-btn(
                       variant="light"
+                      href='https://www.betterunite.com/bikesforkids-uvalde'
                     ) Donate Now
 
     section.who-we-are
@@ -46,9 +47,11 @@
         )
           b-col.text-center(
             cols="12"
-            md="10"
           )
-            h2.text-tertiary Who We Are
+            b-img(
+              src='/images/logo-short.svg'
+            )
+            h2.text-tertiary.mb-4 Who We Are
             p.h5.mb-4 OpGetOut is a 501c3 nonprofit with deep roots and connections in the wellness, water, military, first responder, medical and philanthropic world. What began organically — providing individuals and groups opportunities to Get Out — is now an intentional, purposeful organization.
             p.text-tertiary.h5.mb-4
               strong We plan and execute experiences, events and outings that utilize evidence-based science: nature and water can be a powerful therapeutic benefit to assist individuals and agencies dealing with loss, PTS, anxiety, grief and stress.
@@ -91,7 +94,9 @@
                         style='font-size: 24px'
                       ) Donations
                       p We function solely on donations and sponsorships which go directly to supporting outings, equipment, events and resources for individuals and agencies to learn how to benefit from nature and water as a validated wellness tool.
-                      b-btn Donate
+                      b-btn(
+                        href='https://www.betterunite.com/bikesforkids-uvalde'
+                      ) Donate
 
     section.about
       b-container.mb-5(
@@ -159,7 +164,7 @@
             ) We have worked with first responders, military, women, foster children, struggling youth, and individuals battling illness, grief, loss, PTS, anxiety and depression – all who continue to share amazing testimonies of how nature and water has moved, unlocked, and refreshed them.
 
         b-row
-          b-col(
+          b-col.mb-4.mb-md-0(
             cols="12"
             md="6"
             v-for="(testimonial, index) in testimonials"
@@ -291,12 +296,19 @@
                 b-col(
                   cols="auto"
                 )
-                  b-img.mr-3(
-                    src="/images/instagram.svg"
+                  a(
+                    href='https://www.instagram.com/opgetoutorg'
                   )
-                  b-img(
-                    src="/images/facebook.svg"
+                    b-img.mr-3(
+                      src="/images/instagram.svg"
+                    )
+
+                  a(
+                    href='https://www.facebook.com/Opgetoutorg-111863733716760/'
                   )
+                    b-img(
+                      src="/images/facebook.svg"
+                    )
 </template>
 
 <script>
@@ -367,7 +379,7 @@ export default {
           date: 'October 28-30, 2022',
           title: 'OpGetOut First Responder & Military Retreat',
           location: 'Canyon Lake, TX',
-          body: '_An all-female weekend sharing #bluemindsisterhood! Wakesurf Saturday, Paddle Jam Sunday and weekend after party with food, DJ Coy, Boss Jaguar Surf Band, silent and live auctions with family and friends!_ \n\n Camaraderie, inspiration, and empowerment with amazing like-minded women paddling in memory and honor of Travis County first responders Kristin McLain &amp; Jessica Hollis. All proceeds provide nature and water events, experiences and equipment for front-line workers, military, nurses, surviving family and agencies through Operation Get Out, a 501c3 nonprofit.',
+          body: '_A weekend retreat providing nature and water experiences with boating, wake surfing, lakeside yoga, and paddleboarding, good food and good music for front line responders and military at the beautiful beautiful Canyon Lakeview Resort, Canyon Lake, Texas. Email cindy@getoutgirl.com for participation and sponsorship information._',
           image: 'military'
         }
       ]
@@ -389,7 +401,9 @@ export default {
 }
 
 section.banner {
-  margin-top: -80px;
+  @include media-breakpoint-up(md) {
+    margin-top: -80px;
+  }
 
   .callout {
     background-image: url('/images/bike.jpg');

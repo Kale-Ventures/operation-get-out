@@ -37,7 +37,9 @@ b-navbar.px-0(
       b-nav-item(
         to="/contact"
       ) Connect
-  b-btn.mr-1.mr-md-4 Donate
+  b-btn.mr-1.mr-md-4(
+    href='https://www.betterunite.com/bikesforkids-uvalde'
+  ) Donate
 
 </template>
 
