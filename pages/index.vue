@@ -79,7 +79,9 @@
                         style='font-size: 24px'
                       ) Events
                       p Our events bring the community together to experience nature and discover wellness. Paddle boarding to hiking, find an event and register to join us for therapy through the great outdoors.
-                      b-btn See Events
+                      b-btn(
+                        href='#events'
+                      ) See Events
                 b-col.mb-4(
                   cols="12"
                   md="5"
