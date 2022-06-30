@@ -3,26 +3,20 @@ b-navbar.px-0(
   sticky
   toggleable="lg"
 )
-  b-navbar-toggle(
-    target="nav-collapse"
-  )
-    b-img(
-      src="/svgs/hamburger.svg"
-      width="40"
-      height="24"
-    )
-  b-navbar-brand(
+  //- b-navbar-toggle(
+  //-   target="nav-collapse"
+  //- )
+  //-   b-img(
+  //-     src="/svgs/hamburger.svg"
+  //-     width="40"
+  //-     height="24"
+  //-   )
+  b-navbar-brand.ml-4(
     to="/"
   )
-    b-img.d-lg-none(
-      src="/svgs/logo.svg"
-      width="225"
-      height="37"
-    )
-    b-img.d-none.d-lg-block(
-      src="/svgs/logo.svg"
-      width="252"
-      height="43"
+    b-img(
+      src="/images/logo.png"
+      height="30"
     )
   b-collapse#nav-collapse.ml-auto.px-3.px-lg-0(
     is-nav

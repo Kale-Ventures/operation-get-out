@@ -1,8 +1,12 @@
 <template lang="pug">
-.testimonial.mb-4.mb-md-0
-  p.quote Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.
-  p.attribution @Ralph_Keller
-  p.title Job Title
+.testimonial.mb-4.mb-md-0.fill-height
+  b-img.mb-5(
+    src="/images/quote.svg"
+    width="30"
+  )
+  p.quote {{ testimonial.quote }}
+  p.attribution {{ testimonial.attribution }}
+  p.title(v-if="testimonial.title") {{ testimonial.title}}
 
 </template>
 
@@ -25,13 +29,18 @@ export default {
   padding: 60px 30px;
 }
 
+img {
+  transform: rotate(180deg);
+}
+
 .quote {
-  color: #A1AEB7;
   font-size: 18px;
 }
 
 .attribution {
   margin-bottom: 0;
+  font-size: 22px;
+  color: $tertiary;
 }
 
 .title {

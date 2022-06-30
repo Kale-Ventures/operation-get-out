@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="24px" viewBox="0 0 11 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A153DFC5-BF52-43F2-89B5-947DFCE2C0FA</title>
+    <defs>
+        <path d="M10.4208456,11.6759789 L7.15021112,11.6759789 L7.15021112,23.3333333 L2.30377697,23.3333333 L2.30377697,11.6759789 L-5.32907052e-14,11.6759789 L-5.32907052e-14,7.5559026 L2.30377697,7.5559026 L2.30377697,4.89097114 C2.30377697,2.98235873 3.21071201,1.16943492e-13 7.19474811,1.16943492e-13 L10.7860489,0.0137659784 L10.7860489,4.01318758 L8.17942044,4.01318758 C7.7551044,4.01318758 7.15183064,4.2253456 7.15183064,5.13551969 L7.15183064,7.55671236 L10.8443519,7.55671236 L10.4208456,11.6759789 Z" id="path-1"></path>
+    </defs>
+    <g id="Design-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OGO--Comp-with-content." transform="translate(-972.000000, -6965.000000)">
+            <g id="Contact-#2" transform="translate(0.000000, 6503.000000)">
+                <g id="Atoms-/-icons-/-System-/-SM-instagram-Copy" transform="translate(972.000000, 462.333333)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#C2D1D9" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="↪🎨" mask="url(#mask-2)" fill="#3BB4C4">
+                        <g transform="translate(-15.000000, -8.333333)" id="Atoms-/-Colors-/-Black">
+                            <rect x="0" y="0" width="40" height="40"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

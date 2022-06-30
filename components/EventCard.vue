@@ -1,5 +1,5 @@
 <template lang="pug">
-.bg-white
+.bg-white.mb-4.event-card
   b-row
     b-col(
       cols="12"
@@ -7,7 +7,7 @@
       lg="4"
     )
       .image(
-        style="background-image: url('https://picsum.photos/seed/srgj/400')"
+        :style="`background-image: url('/images/${event.image}.jpg')`"
       )
 
     b-col(
@@ -16,13 +16,12 @@
       lg="8"
     )
       .px-4.py-4
-        h5.date September 24-25, 2022
-        h4 Get Out Girl Surf &amp; Paddle Jam Weekend
+        h5.date {{ event.date }}
+        h4 {{ event.title }}
         .mb-4
-          p
-            em.font-weight-medium An all-female weekend sharing #bluemindsisterhood! Wakesurf Saturday, Paddle Jam Sunday and weekend after party with food, DJ Coy, Boss Jaguar Surf Band, silent and live auctions with family and friends!
-          p Camaraderie, inspiration, and empowerment with amazing like-minded women paddling in memory and honor of Travis County first responders Kristin McLain &amp; Jessica Hollis. All proceeds provide nature and water events, experiences and equipment for front-line workers, military, nurses, surviving family and agencies through Operation Get Out, a 501c3 nonprofit.
-
+          div(
+            v-html="$md.render(event.body)"
+          )
         b-row(
           align-h="between"
         )
@@ -33,8 +32,8 @@
             p(
               style="font-size: 18px;"
             )
-              strong.text-uppercase Location:&nbsp;
-              | Lake Austin, TX
+              strong.text-uppercase.text-primary Location:&nbsp;
+              | {{ event.location }}
           b-col(
             cols="12"
             md="auto"
@@ -64,8 +63,14 @@ a {
 }
 
 .image {
+  height: 100%;
   min-height: 400px;
   background-size: cover;
   background-position: center;
+}
+
+::v-deep em {
+  font-weight: 500;
+  color: $tertiary;
 }
 </style>
