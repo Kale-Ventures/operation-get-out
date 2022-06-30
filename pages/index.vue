@@ -98,7 +98,7 @@
                         href='https://www.betterunite.com/bikesforkids-uvalde'
                       ) Donate
 
-    section.about
+    section.about#our-story
       b-container.mb-5(
         fluid='xxl'
       )
@@ -194,7 +194,7 @@
               :member="member"
             )
 
-    section.events(
+    section.events#events(
       style="background-color: #eaf7ff"
     )
       b-container
@@ -217,7 +217,7 @@
     //-       b-col.text-center
     //-         h2.text-tertiary Our Community
 
-    section.connect
+    section.connect#connect
       b-container
         b-row(
           align-h="center"

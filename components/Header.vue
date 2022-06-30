@@ -23,19 +23,13 @@ b-navbar.px-0(
   )
     b-navbar-nav.ml-auto.d-flex.align-items-center
       b-nav-item.text-primary(
-        to="/contact"
-      ) About
+        to="#our-story"
+      ) Our Story
       b-nav-item(
-        to="/contact"
-      ) Resources
-      b-nav-item(
-        to="/contact"
+        to="#events"
       ) Events
       b-nav-item(
-        to="/contact"
-      ) Community
-      b-nav-item(
-        to="/contact"
+        to="#connect"
       ) Connect
   b-btn.mr-1.mr-md-4(
     href='https://www.betterunite.com/bikesforkids-uvalde'
