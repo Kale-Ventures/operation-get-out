@@ -32,9 +32,9 @@
                 )
                   .p-5
                     h3.h5
-                      em OpGetOut is partnering with The Move, WeDu &amp; Mellow Johnny’s
+                      em OpGetOut is partnering with The Move, WEDŪ, Ski Dock &amp; Mellow Johnny’s
                     h2.h4 Bikes for Kids Uvalde supporting Robb Elementary
-                    p Let’s help kids be kids by providing 750 bikes for each child attending the newly combined Flores Elementary school for the start of the school year.
+                    p Let’s help these kids Get Out and enjoy the wellness benefits of being on a bike! Join our mission to provide a bike and helmet for each child from Robb and Flores Elementary at the start of the school year - 750 bikes!
                     b-btn(
                       variant="light"
                       href='https://www.betterunite.com/bikesforkids-uvalde'
@@ -78,7 +78,7 @@
                       h3.h5.text-primary.mb-4(
                         style='font-size: 24px'
                       ) Events
-                      p Our events bring the community together to experience nature and discover wellness. Paddle boarding to hiking, find an event and register to join us for therapy through the great outdoors.
+                      p Our events bring the community together to experience nature and discover wellness. Paddleboarding to cycling, yoga to wakesurfing, find an event and register to Get Out with us and experience wellness in the great outdoors.
                       b-btn(
                         href='#events'
                       ) See Events
@@ -124,7 +124,7 @@
           )
             .eyebrow Our Story
             h2.text-tertiary.mb-3 It started out of a love of the outdoors and a need to heal.
-            p We have devoted our lives to bringing individuals and groups into nature and onto the water. But when we lost two Travis County female first responders within six months of each other — StarFlight nurse Kristin McLain and Senior Deputy Jessica Hollis — we were suddenly surrounded by first responders and others dealing with loss, anxiety, depression and trauma. They turned to us for nature, water and healing —  asking us to help them heal through some of the same activities Kristin and Jessica used for their own respite.
+            p We have devoted our lives to bringing individuals and groups into nature and onto the water. But when we lost two of our own within six months of each other, StarFlight nurse Kristin McLain and Senior Deputy Jessica Hollis, both Travis County first responders, within six months of each other — StarFlight nurse Kristin McLain and Senior Deputy Jessica Hollis — we were suddenly surrounded by first responders and others dealing with loss, anxiety, depression and trauma. They turned to us for nature, water and healing —  asking us to help them heal through some of the same activities Kristin and Jessica used for their own respite.
 
       b-container.mt-5.mb-5(
         fluid='xxl'
@@ -140,7 +140,7 @@
             h2.mb-3.text-tertiary Then we looked to science to validate what we were seeing.
             p A pursuit of the science and validation behind nature and water as medicine began, including guidance and partnerships with Wallace J. Nichols and the science of Blue Mind; the Global Wellness Institute; International Surf Therapy Organization; peer support advisors; and mental wellness counselors. OpGetOut is committed to helping others be intentional in using nature and water as a powerful tool for positive mental and emotional wellness impact.
             p
-              strong A $30 donation includes signed copy of Blue Mind book, Operation Get Out #LetTheWaterMoveYou silicone bracelet, Blue Marble talisman, and shipping..
+              strong A $30 donation includes signed copy of Blue Mind book, Operation Get Out #LetTheWaterMoveYou silicone bracelet, Blue Marble talisman, and shipping.
 
             b-btn Buy the Book
 
@@ -202,7 +202,6 @@
       b-container
         b-row
           b-col.text-center
-            .eyebrow Events
             h2.text-tertiary.mb-5 Upcoming Events
 
         b-row
@@ -345,12 +344,12 @@ export default {
           bio: 'Instrumental in event planning and coordination, Jen has provided support for events since OGO’s inception. Jen has decades of experience in water sports activities and fully understands that water is medicine and being outdoors is critical to mental wellness. Jen is a Centurion Boats Water Warrior, mountain biker, trail runner, and wakesports coach. She also fulfills OGO operational roles including grant management and fundraising.'
         },
         {
-          name: 'Shelby Hollis',
-          bio: 'Shelby began her nursing career 20 years ago in the Emergency Department and now serves as a cardiac nurse at Heart Hospital of Austin. She has worked in various areas of nursing through the years and has been privileged to help others gain needed healing. While serving as a Palliative Care Nurse Coordinator at a local trauma center during the recent pandemic, she witnessed devastating losses that only highlighted her passion to continue to getting others as well herself outdoors and on the water for both physical and mental wellness.'
-        },
-        {
           name: 'Ricky Hollis',
           bio: 'Ricky is an Austin Police Officer and former paramedic and Marine. He previously served as a mental health officer while on patrol for APD and now is on the Peer Support Team. He assists with running the Austin Police Honor Guard and has an active role working with the families of fallen officers. His love for the outdoors and water has not only led him to share it with others, but also spurred him to use the art of creating custom wakesurf boards, Patriot Board Co., for mental release.'
+        },
+        {
+          name: 'Shelby Hollis',
+          bio: 'Shelby began her nursing career 20 years ago in the Emergency Department and now serves as a cardiac nurse at Heart Hospital of Austin. She has worked in various areas of nursing through the years and has been privileged to help others gain needed healing. While serving as a Palliative Care Nurse Coordinator at a local trauma center during the recent pandemic, she witnessed devastating losses that only highlighted her passion to continue to getting others as well herself outdoors and on the water for both physical and mental wellness.'
         },
         {
           name: 'Martha B. Marshall, M.A., LPC',
@@ -375,14 +374,18 @@ export default {
           title: 'Get Out Girl Surf & Paddle Jam Weekend',
           location: 'Lake Austin, TX',
           body: '_An all-female weekend sharing #bluemindsisterhood! Wakesurf Saturday, Paddle Jam Sunday and weekend after party with food, DJ Coy, Boss Jaguar Surf Band, silent and live auctions with family and friends!_ \n\n Camaraderie, inspiration, and empowerment with amazing like-minded women paddling in memory and honor of Travis County first responders Kristin McLain &amp; Jessica Hollis. All proceeds provide nature and water events, experiences and equipment for front-line workers, military, nurses, surviving family and agencies through Operation Get Out, a 501c3 nonprofit.',
-          image: 'surf'
+          image: 'surf',
+          buttonText: 'Register',
+          url: 'mailto:cindy@getoutgirl.com'
         },
         {
           date: 'October 28-30, 2022',
           title: 'OpGetOut First Responder & Military Retreat',
           location: 'Canyon Lake, TX',
-          body: '_A weekend retreat providing nature and water experiences with boating, wake surfing, lakeside yoga, and paddleboarding, good food and good music for front line responders and military at the beautiful beautiful Canyon Lakeview Resort, Canyon Lake, Texas. Email cindy@getoutgirl.com for participation and sponsorship information._',
-          image: 'military'
+          body: '_A weekend retreat providing nature and water experiences with boating, wake surfing, lakeside yoga, and paddleboarding, good food and good music for front line responders and military at the beautiful Canyon Lakeview Resort, Canyon Lake, Texas.',
+          image: 'military',
+          buttonText: 'More Info',
+          url: 'mailto:cindy@getoutgirl.com'
         }
       ]
     }

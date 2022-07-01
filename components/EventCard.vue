@@ -38,7 +38,9 @@
             cols="12"
             md="auto"
           )
-            b-btn Register
+            b-btn(
+              :href='event.url'
+            ) {{ event.buttonText }}
 
 </template>
 
