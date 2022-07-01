@@ -36,9 +36,9 @@
                     h2.h4 Bikes for Kids Uvalde supporting Robb Elementary
                     p Let’s help these kids Get Out and enjoy the wellness benefits of being on a bike! Join our mission to provide a bike and helmet for each child from Robb and Flores Elementary at the start of the school year - 750 bikes!
                     b-btn(
-                      variant="light"
+                      variant="tertiary"
                       href='https://www.betterunite.com/bikesforkids-uvalde'
-                    ) Donate Now
+                    ) Donate to Fundraiser
 
     section.who-we-are
       b-container
@@ -81,6 +81,7 @@
                       p Our events bring the community together to experience nature and discover wellness. Paddleboarding to cycling, yoga to wakesurfing, find an event and register to Get Out with us and experience wellness in the great outdoors.
                       b-btn(
                         href='#events'
+                        variant="tertiary"
                       ) See Events
                 b-col.mb-4(
                   cols="12"
@@ -97,8 +98,9 @@
                       ) Donations
                       p We function solely on donations and sponsorships which go directly to supporting outings, equipment, events and resources for individuals and agencies to learn how to benefit from nature and water as a validated wellness tool.
                       b-btn(
+                        variant="tertiary"
                         href='https://www.betterunite.com/bikesforkids-uvalde'
-                      ) Donate
+                      ) Donate to Fundraiser
 
     section.about#our-story
       b-container.mb-5(

@@ -31,9 +31,8 @@ b-navbar.px-0(
       b-nav-item(
         to="#connect"
       ) Connect
-  b-btn.mr-1.mr-md-4(
-    href='https://www.betterunite.com/bikesforkids-uvalde'
-  ) Donate
+
+  <a href="#XRDHRHMF" style="display: none"></a>
 
 </template>
 
