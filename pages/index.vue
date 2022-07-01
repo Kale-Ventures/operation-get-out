@@ -97,10 +97,7 @@
                         style='font-size: 24px'
                       ) Donations
                       p We function solely on donations and sponsorships which go directly to supporting outings, equipment, events and resources for individuals and agencies to learn how to benefit from nature and water as a validated wellness tool.
-                      b-btn(
-                        variant="tertiary"
-                        href='https://www.betterunite.com/bikesforkids-uvalde'
-                      ) Donate to Fundraiser
+                      <a href="#XRDHRHMF" style="display: none"></a>
 
     section.about#our-story
       b-container.mb-5(
