@@ -126,9 +126,9 @@
             h2.text-tertiary.mb-3 It started out of a love of the outdoors and a need to heal.
             p We have devoted our lives to bringing individuals and groups into nature and onto the water. But when we lost two of our own within six months of each other, StarFlight nurse Kristin McLain and Senior Deputy Jessica Hollis, both Travis County first responders, within six months of each other — StarFlight nurse Kristin McLain and Senior Deputy Jessica Hollis — we were suddenly surrounded by first responders and others dealing with loss, anxiety, depression and trauma. They turned to us for nature, water and healing —  asking us to help them heal through some of the same activities Kristin and Jessica used for their own respite.
 
-      //- b-container.mt-5.mb-5(
-      //-   fluid='xxl'
-      //- )
+      b-container.mt-5.mb-5(
+        fluid='xxl'
+      )
         b-row(
           align-v="center"
         )
@@ -142,7 +142,7 @@
             p
               strong A $30 donation includes signed copy of Blue Mind book, Operation Get Out #LetTheWaterMoveYou silicone bracelet, Blue Marble talisman, and shipping.
 
-            b-btn Buy the Book
+            //- b-btn Buy the Book
 
           b-col(
             cols="12"
