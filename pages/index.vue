@@ -141,8 +141,8 @@
           )
             h2.mb-3.text-tertiary Then we looked to science to validate what we were seeing.
             p A pursuit of the science and validation behind nature and water as medicine began, including guidance and partnerships with Wallace J. Nichols and the science of Blue Mind; the Global Wellness Institute; International Surf Therapy Organization; peer support advisors; and mental wellness counselors. OpGetOut is committed to helping others be intentional in using nature and water as a powerful tool for positive mental and emotional wellness impact.
-            p
-              strong A $30 donation includes signed copy of Blue Mind book, Operation Get Out #LetTheWaterMoveYou silicone bracelet, Blue Marble talisman, and shipping.
+            //- p
+            //-   strong A $30 donation includes signed copy of Blue Mind book, Operation Get Out #LetTheWaterMoveYou silicone bracelet, Blue Marble talisman, and shipping.
 
             //- b-btn Buy the Book
 
