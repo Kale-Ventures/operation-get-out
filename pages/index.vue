@@ -32,7 +32,7 @@
                 )
                   .p-5
                     h3.h5
-                      em OpGetOut is partnering with The Move, WEDŪ, Ski Dock &amp; Mellow Johnny’s
+                      em OpGetOut is partnering with The Move, WEDŪ, Ski Dock, Wish for Wheels &amp; Mellow Johnny’s
                     h2.h4 Bikes for Kids Uvalde supporting Robb Elementary
                     p Let’s help these kids Get Out and enjoy the wellness benefits of being on a bike! Join our mission to provide a bike and helmet for each child from Robb and Flores Elementary at the start of the school year - 750 bikes!
                     b-btn(
