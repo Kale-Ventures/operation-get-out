@@ -232,6 +232,7 @@
               method="POST"
               data-netlify="true"
             )
+              input(type="hidden" name="form-name" value="connect")
               b-row
                 b-col(
                   cols="12"
@@ -239,6 +240,7 @@
                 )
                   b-form-group
                     b-form-input(
+                      name="first_name"
                       type="text"
                       placeholder="First Name"
                     )
@@ -248,6 +250,7 @@
                 )
                   b-form-group
                     b-form-input(
+                      name="last_name"
                       type="text"
                       placeholder="Last Name"
                     )
@@ -257,6 +260,7 @@
                 )
                   b-form-group
                     b-form-input(
+                      name="email"
                       type="text"
                       placeholder="Email"
                     )
@@ -266,6 +270,7 @@
                 )
                   b-form-group
                     b-form-select(
+                      name="interest"
                       v-model='selected'
                       :options='options'
                       placeholder="I'm interested in..."
@@ -275,6 +280,7 @@
                 )
                   b-form-group
                     b-form-textarea.mb-4(
+                      name="text"
                       placeholder="Write Something..."
                       no-resize
                       rows="6"
