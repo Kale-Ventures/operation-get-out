@@ -11,7 +11,7 @@
             lg="8"
           )
             h1.text-white Finding mental and physical wellness through nature and water.
-            p.text-white OpGetOut was founded to provide the experiences and resources people need to utilize nature and water for positive mental and physical wellness.
+            p.text-white OpGetOut was founded to provide the experiences and resources people need to intentionally utilize nature and water for positive mental and physical wellness.
 
     section.banner
       b-container
@@ -54,7 +54,7 @@
             h2.text-tertiary.mb-4 Who We Are
             p.h5.mb-4 OpGetOut is a 501c3 nonprofit with deep roots and connections in the wellness, water, military, first responder, medical and philanthropic world. What began organically — providing individuals and groups opportunities to Get Out — is now an intentional, purposeful organization.
             p.text-tertiary.h5.mb-4
-              strong We plan and execute experiences, events and outings that utilize evidence-based science: nature and water can be a powerful therapeutic benefit to assist individuals and agencies dealing with loss, PTS, anxiety, grief and stress.
+              strong We plan and execute intentional experiences, events and outings that utilize evidence-based science: nature and water can be a powerful therapeutic benefit to assist individuals and agencies dealing with loss, PTS, anxiety, grief and stress.
             p.h5.mb-4 We witness the powerful unlocking and resetting that takes place when individuals are given the opportunity and tools to be empowered with the healing elements of nature and water.
 
       .bg-primary
@@ -387,10 +387,10 @@ export default {
           date: 'October 28-30, 2022',
           title: 'OpGetOut First Responder & Military Retreat',
           location: 'Canyon Lake, TX',
-          body: 'A weekend retreat providing nature and water experiences with boating, wake surfing, lakeside yoga, and paddleboarding, good food and good music for front line responders and military at the beautiful Canyon Lakeview Resort, Canyon Lake, Texas.',
+          body: "A weekend retreat providing nature and water experiences with boating, wake surfing, lakeside yoga, and paddleboarding, good food and good music for front line responders and military at the beautiful Canyon Lakeview Resort, Canyon Lake, Texas. Donations and sponsorships fully fund participants' registration. To request complimentary registration or receive further information, email cindy@operationgetout.org",
           image: 'military',
-          buttonText: 'More Info',
-          url: 'mailto:cindy@getoutgirl.com'
+          buttonText: 'Register',
+          url: 'https://betterunite.com/OperationGetOut-operationgetoutfallretreat2022'
         }
       ]
     }
