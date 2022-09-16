@@ -15,30 +15,27 @@
 
     section.banner
       b-container
-        b-row
-          b-col.px-0.px-md-2
-            .bg-secondary
-              b-row.text-white(
-                align-v="stretch"
-                no-gutters
-              )
-                b-col.callout(
-                  cols="12"
-                  md="4"
-                )
-                b-col(
-                  cols="12"
-                  md="8"
-                )
-                  .p-5
-                    h3.h5
-                      em OpGetOut is partnering with The Move, WEDŪ, Ski Dock, Wish for Wheels &amp; Mellow Johnny’s
-                    h2.h4 Bikes for Kids Uvalde supporting Robb Elementary
-                    p Let’s help these kids Get Out and enjoy the wellness benefits of being on a bike! Join our mission to provide a bike and helmet for each child from Robb and Flores Elementary at the start of the school year - 750 bikes!
-                    b-btn(
-                      variant="tertiary"
-                      href='https://www.betterunite.com/bikesforkids-uvalde'
-                    ) Donate to Fundraiser
+        b-row.bg-secondary.py-3.text-white(
+          align-v="center"
+        )
+          b-col(
+            cols="12"
+            md="6"
+            lg="5"
+          )
+            b-embed(
+              type="iframe"
+              aspect="16by9"
+              src="https://www.youtube.com/embed/z1gD3ttcPKY"
+              allowfullscreen
+            )
+          b-col(
+            cols="12"
+            md="6"
+            lg="7"
+          )
+            h2.h3 Helping the Uvalde Kids Get Out
+            p Thank you to all of the donors, volunteers, and partners that supported the Operation Get Out Bikes For Kids Uvalde by providing 800 bikes, helmets, and gear to the Robb Elementary community.
 
     section.who-we-are
       b-container
