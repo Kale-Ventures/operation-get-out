@@ -381,7 +381,7 @@ export default {
           title: 'Boat, Bike & Board Weekend, Gran Fondo Hincapie',
           location: 'Merced, CA',
           body: "Introducing our first of five collaborative weekends with Hincapie Sports, Centurion Boats, Ventum Bikes, Ski Dock and Blue Surf - a destination Get Out for first responders, military, front line workers and/or caregivers. Merced's event will include use of custom Ventum bike for training and event plus: \n\n * Wednesday: Travel day (complimentary travel voucher for out of town participants) \n\n* Thursday: VIP Centurion Boats Factory Tour, OGO group Wake Surf outing, lakeside VIP dinner \n\n* Friday: Gran Fondo Merced expo and Ventum bike fit \n\n* Saturday registration to Gran Fondo with after party and festival. \n\n* Sunday: Travel day",
-          image: 'surf',
+          image: 'Merced',
           buttonText: 'Register',
           url: 'https://www.betterunite.com/OperationGetOut-9thannualgetoutgirlsurfpaddlejamweekend'
         },
