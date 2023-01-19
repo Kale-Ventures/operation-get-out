@@ -80,6 +80,7 @@
                         href='#events'
                         variant="tertiary"
                       ) See Events
+
                 b-col.mb-4(
                   cols="12"
                   md="5"
@@ -368,11 +369,24 @@ export default {
         {
           name: 'Steve Present',
           bio: 'Steve has over 40 years in the marine and watersports industry and was raised in Clearlake, Texas, as the son of an Air Force and NASA test pilot for the Apollo program. When Steve’s father lost his life in a test mission, Steve’s community surrounded him by water as a way for him to connect to nature, others and himself. Steve’s immersion in the watersports world began from the roots of loss, but he has spent a lifetime passing it forward, with connection and leadership in many philanthropic causes involving the use of nature and water. Steve is an avid waterskier, wakesurfer, paddleboard and mountain biker, and has received numerous awards and recognition for his role and leadership in the watersports industry, including Centurion Boats Troy Gentry Award and Water Warrior recipient.'
+        },
+        {
+          name: 'Jason Simmons',
+          bio: "Jason has been a friend and volunteer with OGO since its inception and joined us in 2022 in a more formal sense to help accelerate and drive our mission to greater heights. He has a passion for water sports dating back to childhood experiences of water-skiing, surfing, and racing catamarans on the Chesapeake Bay, and military roots as his father served in the US Navy. In 2000, Jason settled his family on the banks of Lake Austin where water activities are not only a part of everyday life, but a very positive impact on mental wellness. Professionally he has a knack for operations and data and works as a data analyst for Dun & Bradstreet. In his spare time he also is an avid airplane pilot and flight instructor where many weekend days are spent either teaching/refining his student's flying capabilities or shuttling his clients to/from locations all around Texas and beyond."
         }
       ],
       events: [
         {
-          date: 'September 24-25, 2022',
+          date: 'March 15-19, 2023',
+          title: 'Boat, Bike & Board Weekend, Gran Fondo Hincapie',
+          location: 'Merced, CA',
+          body: "Introducing our first of five collaborative weekends with Hincapie Sports, Centurion Boats, Ventum Bikes, Ski Dock and Blue Surf - a destination Get Out for first responders, military, front line workers and/or caregivers. Merced's event will include use of custom Ventum bike for training and event plus: \n\n * Wednesday: Travel day (complimentary travel voucher for out of town participants) \n\n* Thursday: VIP Centurion Boats Factory Tour, OGO group Wake Surf outing, lakeside VIP dinner \n\n* Friday: Gran Fondo Merced expo and Ventum bike fit \n\n* Saturday registration to Gran Fondo with after party and festival. \n\n* Sunday: Travel day",
+          image: 'surf',
+          buttonText: 'Register',
+          url: 'https://www.betterunite.com/OperationGetOut-9thannualgetoutgirlsurfpaddlejamweekend'
+        },
+        {
+          date: 'September 16-17, 2023',
           title: 'Get Out Girl Surf & Paddle Jam Weekend',
           location: 'Lake Austin, TX',
           body: '_An all-female weekend sharing #bluemindsisterhood! Wakesurf Saturday, Paddle Jam Sunday and weekend after party with food, DJ Coy, Boss Jaguar Surf Band, silent and live auctions with family and friends!_ \n\n Camaraderie, inspiration, and empowerment with amazing like-minded women paddling in memory and honor of Travis County first responders Kristin McLain &amp; Jessica Hollis. All proceeds provide nature and water events, experiences and equipment for front-line workers, military, nurses, surviving family and agencies through Operation Get Out, a 501c3 nonprofit.',
@@ -381,7 +395,7 @@ export default {
           url: 'https://www.betterunite.com/OperationGetOut-9thannualgetoutgirlsurfpaddlejamweekend'
         },
         {
-          date: 'October 28-30, 2022',
+          date: 'October 6-8, 2023',
           title: 'OpGetOut First Responder & Military Retreat',
           location: 'Canyon Lake, TX',
           body: "A weekend retreat providing nature and water experiences with boating, wake surfing, lakeside yoga, and paddleboarding, good food and good music for front line responders and military at the beautiful Canyon Lakeview Resort, Canyon Lake, Texas. Donations and sponsorships fully fund participants' registration. To request complimentary registration or receive further information, email cindy@operationgetout.org",
