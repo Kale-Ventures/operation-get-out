@@ -80,6 +80,7 @@
                         href='#events'
                         variant="tertiary"
                       ) See Events
+
                 b-col.mb-4(
                   cols="12"
                   md="5"
@@ -368,6 +369,10 @@ export default {
         {
           name: 'Steve Present',
           bio: 'Steve has over 40 years in the marine and watersports industry and was raised in Clearlake, Texas, as the son of an Air Force and NASA test pilot for the Apollo program. When Steve’s father lost his life in a test mission, Steve’s community surrounded him by water as a way for him to connect to nature, others and himself. Steve’s immersion in the watersports world began from the roots of loss, but he has spent a lifetime passing it forward, with connection and leadership in many philanthropic causes involving the use of nature and water. Steve is an avid waterskier, wakesurfer, paddleboard and mountain biker, and has received numerous awards and recognition for his role and leadership in the watersports industry, including Centurion Boats Troy Gentry Award and Water Warrior recipient.'
+        },
+        {
+          name: 'Jason Simmons',
+          bio: "Jason has been a friend and volunteer with OGO since its inception and joined us in 2022 in a more formal sense to help accelerate and drive our mission to greater heights. He has a passion for water sports dating back to childhood experiences of water-skiing, surfing, and racing catamarans on the Chesapeake Bay, and military roots as his father served in the US Navy. In 2000, Jason settled his family on the banks of Lake Austin where water activities are not only a part of everyday life, but a very positive impact on mental wellness. Professionally he has a knack for operations and data and works as a data analyst for Dun & Bradstreet. In his spare time he also is an avid airplane pilot and flight instructor where many weekend days are spent either teaching/refining his student's flying capabilities or shuttling his clients to/from locations all around Texas and beyond."
         }
       ],
       events: [
