@@ -317,6 +317,13 @@
 
 <script>
 export default {
+  async asyncData ({ $content }) {
+    const teamMembers = await $content('team-members').fetch()
+
+    return {
+      teamMembers
+    }
+  },
   data () {
     return {
       selected: null,
@@ -339,40 +346,6 @@ export default {
         {
           quote: 'I cannot thank y’all enough for allowing me to join you on the water yesterday; after a year caring for COVID patients and caring for my own children during the pandemic, the water was exactly what I needed to help let it all go. This is an amazing organization!',
           attribution: 'ER Nurse'
-        }
-      ],
-      teamMembers: [
-        {
-          name: 'Jen Allis',
-          bio: 'Instrumental in event planning and coordination, Jen has provided support for events since OGO’s inception. Jen has decades of experience in water sports activities and fully understands that water is medicine and being outdoors is critical to mental wellness. Jen is a Centurion Boats Water Warrior, mountain biker, trail runner, and wakesports coach. She also fulfills OGO operational roles including grant management and fundraising.'
-        },
-        {
-          name: 'Ricky Hollis',
-          bio: 'Ricky is an Austin Police Officer and former paramedic and Marine. He previously served as a mental health officer while on patrol for APD and now is on the Peer Support Team. He assists with running the Austin Police Honor Guard and has an active role working with the families of fallen officers. His love for the outdoors and water has not only led him to share it with others, but also spurred him to use the art of creating custom wakesurf boards, Patriot Board Co., for mental release.'
-        },
-        {
-          name: 'Shelby Hollis',
-          bio: 'Shelby began her nursing career 20 years ago in the Emergency Department and now serves as a cardiac nurse at Heart Hospital of Austin. She has worked in various areas of nursing through the years and has been privileged to help others gain needed healing. While serving as a Palliative Care Nurse Coordinator at a local trauma center during the recent pandemic, she witnessed devastating losses that only highlighted her passion to continue to getting others as well herself outdoors and on the water for both physical and mental wellness.'
-        },
-        {
-          name: 'Martha B. Marshall, M.A., LPC',
-          bio: 'Martha Marshall is a licensed counselor who utilizes nature and water as co-therapists. Her creative approach to change might include nature as a co-therapist: a walk outdoors under the oaks, a hike, or even counseling in a paddle boarding session on Austin lakes to help get in touch with the deeper, inner-knowing and strength we all forget sometimes. Her goal in work with clients is their return to balance, new perspectives, and a welcoming of their whole, wise soul. Martha presents workshops on the mind-body connection, mindful self-compassion, and family dynamics, and leads outdoor meditation experiences. She is a NADA Acudetox Specialist and NADA Registered Trainer licensed by the Texas Medical Board for acupuncture to treat addictions. Martha has NOLS Wilderness First Aid certification.'
-        },
-        {
-          name: 'Winston Merrill',
-          bio: 'As a former EMT and paramedic of 23 years, Winston has first-hand knowledge of the stresses encountered every day by first responders. After a career in EMS, Winston landed in the watersports industry. Living with the power of water, Winston has found water to be healing, whether you’re in it, around it or on it. He enjoys paddleboarding, wake surfing, and mountain biking on a regular basis and has a passion for sharing them with others for wellness impact. As an OGO founding member and a Centurion Boats Water Warrior, he is at each event assisting as driver, cyclist, coach and/or paddler while sharing his water story.'
-        },
-        {
-          name: 'Cindy Present',
-          bio: 'Cindy has spent a lifetime in the wellness, fitness and watersports industry. As a life coach, fitness trainer, watersports coach, cycling, running and Ironman athlete, motivator, and Wellness Director at Lake Austin Spa Resort, Cindy has inspired thousands to find improved mental, physical and emotional well-being. Her passion for taking individuals on the water and in nature to assist in moving them through difficult times to deeper levels of personal connection and clarity is embedded in all she does.'
-        },
-        {
-          name: 'Steve Present',
-          bio: 'Steve has over 40 years in the marine and watersports industry and was raised in Clearlake, Texas, as the son of an Air Force and NASA test pilot for the Apollo program. When Steve’s father lost his life in a test mission, Steve’s community surrounded him by water as a way for him to connect to nature, others and himself. Steve’s immersion in the watersports world began from the roots of loss, but he has spent a lifetime passing it forward, with connection and leadership in many philanthropic causes involving the use of nature and water. Steve is an avid waterskier, wakesurfer, paddleboard and mountain biker, and has received numerous awards and recognition for his role and leadership in the watersports industry, including Centurion Boats Troy Gentry Award and Water Warrior recipient.'
-        },
-        {
-          name: 'Jason Simmons',
-          bio: "Jason has been a friend and volunteer with OGO since its inception and joined us in 2022 in a more formal sense to help accelerate and drive our mission to greater heights. He has a passion for water sports dating back to childhood experiences of water-skiing, surfing, and racing catamarans on the Chesapeake Bay, and military roots as his father served in the US Navy. In 2000, Jason settled his family on the banks of Lake Austin where water activities are not only a part of everyday life, but a very positive impact on mental wellness. Professionally he has a knack for operations and data and works as a data analyst for Dun & Bradstreet. In his spare time he also is an avid airplane pilot and flight instructor where many weekend days are spent either teaching/refining his student's flying capabilities or shuttling his clients to/from locations all around Texas and beyond."
         }
       ],
       events: [

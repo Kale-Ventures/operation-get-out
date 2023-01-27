@@ -16,4 +16,22 @@ collections:
     editor:
       preview: false
     files:
-      
+      - label: "Home"
+        name: "home"
+        file: "content/home.md"
+        preview_path: /
+
+  - label: Team
+    name: team-members
+    editor:
+      preview: false
+    label_singular: Team Member
+    format: frontmatter
+    folder: content/team-members
+    file: 'content/team-members.md'
+    preview_path: /
+    create: true
+    identifier_field: name
+    fields:
+      { label: Name, name: name, widget: string }
+      { label: Bio, name: bio, widget: string }
