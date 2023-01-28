@@ -20,6 +20,16 @@ collections:
         name: "home"
         file: "content/home.md"
         preview_path: /
+        fields:
+          - label: Testimonials
+            name: testimonials
+            label_singular: testimonial
+            widget: list
+            fields:
+              - { label: Quote, name: quote, widget: string }
+              - { label: Attribution, name: attribution, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
 
   - label: Team
     name: team-members

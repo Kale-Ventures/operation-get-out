@@ -166,7 +166,7 @@
           b-col.mb-4.mb-md-0(
             cols="12"
             md="6"
-            v-for="(testimonial, index) in testimonials"
+            v-for="(testimonial, index) in page.testimonials"
             :key="index"
             align-v="stretch"
           )
@@ -320,8 +320,11 @@ export default {
   async asyncData ({ $content }) {
     const teamMembers = await $content('team-members').fetch()
 
+    const page = await $content('home').fetch()
+
     return {
-      teamMembers
+      teamMembers,
+      page
     }
   },
   data () {
@@ -337,16 +340,6 @@ export default {
         { value: 'Corporate Wellness Alignment', text: 'Corporate Wellness Alignment' },
         { value: 'All of the Above', text: 'All of the Above' },
         { value: 'Other', text: 'Other' }
-      ],
-      testimonials: [
-        {
-          quote: 'Operation Get Out has opened my eyes and taught me how important it is to take care of myself. It has taught me how important it is to say I’m not ok and to find help and healing through therapy and most important, to me, my blue mind!',
-          attribution: 'Law Enforcement Deputy'
-        },
-        {
-          quote: 'I cannot thank y’all enough for allowing me to join you on the water yesterday; after a year caring for COVID patients and caring for my own children during the pandemic, the water was exactly what I needed to help let it all go. This is an amazing organization!',
-          attribution: 'ER Nurse'
-        }
       ],
       events: [
         {
