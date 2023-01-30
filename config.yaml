@@ -21,6 +21,21 @@ collections:
         file: "content/home.md"
         preview_path: /
         fields:
+          - { label: Header Headline, name: headerHeadline, widget: string }
+          - { label: Header Sub Headline, name: headerSubHeadline, widget: string }
+          - { label: Who We Are Paragraph 1, name: whoWeAreCopy1, widget: markdown }
+          - { label: Who We Are Paragraph 2, name: whoWeAreCopy2, widget: markdown }
+          - { label: Who We Are Paragraph 3, name: whoWeAreCopy3, widget: markdown }
+          - { label: Events Paragraph, name: eventsCopy, widget: markdown }
+          - { label: Donations Paragraph, name: donationsCopy, widget: markdown }
+          - { label: Our Story Eyebrow, name: ourStoryEyebrow, widget: string }
+          - { label: Our Story Headline 1, name: ourStoryHeadline1, widget: string }
+          - { label: Our Story Paragraph 1, name: ourStoryCopy1, widget: markdown }
+          - { label: Our Story Headline 2, name: ourStoryHeadline2, widget: string }
+          - { label: Our Story Paragraph 2, name: ourStoryCopy2, widget: markdown }
+          - { label: Testimonials Headline, name: testimonialsHeadline, widget: string }
+          - { label: Testimonials Sub Headline, name: testimonialsSubHeadline, widget: string }
+
           - label: Testimonials
             name: testimonials
             label_singular: testimonial
@@ -43,8 +58,8 @@ collections:
     create: true
     identifier_field: name
     fields:
-      { label: Name, name: name, widget: string }
-      { label: Bio, name: bio, widget: string }
+      - { label: Name, name: name, widget: string }
+      - { label: Bio, name: bio, widget: string }
 
   - label: Events
     name: events
@@ -58,11 +73,11 @@ collections:
     create: true
     identifier_field: name
     fields:
-      { label: Date Start (Day), name: dateStart, widget: datetime }
-      { label: Date End (Day), name: dateEnd, widget: datetime }
-      { label: Title, name: title, widget: string }
-      { label: Location, name: location, widget: string }
-      { label: Image, name: image, widget: image }
-      { label: Button Text, name: buttonText, widget: string }
-      { label: Button Url, name: url, widget: string }
-      { label: Body, name: body, widget: markdown }
+      - { label: Date Start (Day), name: dateStart, widget: datetime }
+      - { label: Date End (Day), name: dateEnd, widget: datetime }
+      - { label: Title, name: title, widget: string }
+      - { label: Location, name: location, widget: string }
+      - { label: Image, name: image, widget: image }
+      - { label: Button Text, name: buttonText, widget: string }
+      - { label: Button Url, name: url, widget: string }
+      - { label: Body, name: body, widget: markdown }

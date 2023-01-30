@@ -10,8 +10,8 @@
             md="9"
             lg="8"
           )
-            h1.text-white Finding mental and physical wellness through nature and water.
-            p.text-white OpGetOut was founded to provide the experiences and resources people need to intentionally utilize nature and water for positive mental and physical wellness.
+            h1.text-white {{ page.headerHeadline }}
+            p.text-white {{ page.headerSubHeadline }}
 
     section.banner
       b-container
@@ -49,10 +49,9 @@
               src='/images/logo-short.svg'
             )
             h2.text-tertiary.mb-4 Who We Are
-            p.h5.mb-4 OpGetOut is a 501c3 nonprofit with deep roots and connections in the wellness, water, military, first responder, medical and philanthropic world. What began organically — providing individuals and groups opportunities to Get Out — is now an intentional, purposeful organization.
-            p.text-tertiary.h5.mb-4
-              strong We plan and execute intentional experiences, events and outings that utilize evidence-based science: nature and water can be a powerful therapeutic benefit to assist individuals and agencies dealing with loss, PTS, anxiety, grief and stress.
-            p.h5.mb-4 We witness the powerful unlocking and resetting that takes place when individuals are given the opportunity and tools to be empowered with the healing elements of nature and water.
+            div.h5.mb-4(v-html="$md.render(page.whoWeAreCopy1)")
+            div.text-tertiary.h5.mb-4(v-html="$md.render(page.whoWeAreCopy2)")
+            div.h5.mb-4(v-html="$md.render(page.whoWeAreCopy3)")
 
       .bg-primary
         b-container
@@ -75,7 +74,7 @@
                       h3.h5.text-primary.mb-4(
                         style='font-size: 24px'
                       ) Events
-                      p Our events bring the community together to experience nature and discover wellness. Paddleboarding to cycling, yoga to wakesurfing, find an event and register to Get Out with us and experience wellness in the great outdoors.
+                      div(v-html="$md.render(page.eventsCopy)")
                       b-btn(
                         href='#events'
                         variant="tertiary"
@@ -94,7 +93,7 @@
                       h3.h5.text-primary.mb-4(
                         style='font-size: 24px'
                       ) Donations
-                      p We function solely on donations and sponsorships which go directly to supporting outings, equipment, events and resources for individuals and agencies to learn how to benefit from nature and water as a validated wellness tool.
+                      div(v-html="$md.render(page.donationsCopy)")
                       <a href="#XRDHRHMF" style="display: none"></a>
 
     section.about#our-story
@@ -119,9 +118,9 @@
             md="6"
             offset-xl='1'
           )
-            .eyebrow Our Story
-            h2.text-tertiary.mb-3 It started out of a love of the outdoors and a need to heal.
-            p We have devoted our lives to bringing individuals and groups into nature and onto the water. But when we lost two of our own within six months of each other, StarFlight nurse Kristin McLain and Senior Deputy Jessica Hollis, both Travis County first responders, were suddenly surrounded by others dealing with loss, anxiety, depression and trauma. They turned to us for nature, water and healing —  asking us to help them heal through some of the same activities Kristin and Jessica used for their own respite.
+            .eyebrow {{ page.ourStoryEyebrow }}
+            h2.text-tertiary.mb-3 {{ page.ourStoryHeadline1 }}
+            div(v-html="$md.render(page.ourStoryCopy1)")
 
       b-container.mt-5.mb-5(
         fluid='xxl'
@@ -134,8 +133,8 @@
             md="6"
             lg="5"
           )
-            h2.mb-3.text-tertiary Then we looked to science to validate what we were seeing.
-            p A pursuit of the science and validation behind nature and water as medicine began, including guidance and partnerships with Wallace J. Nichols and the science of Blue Mind; the Global Wellness Institute; International Surf Therapy Organization; peer support advisors; and mental wellness counselors. OpGetOut is committed to helping others be intentional in using nature and water as a powerful tool for positive mental and emotional wellness impact.
+            h2.mb-3.text-tertiary {{ page.ourStoryHeadline2 }}
+            div(v-html="$md.render(page.ourStoryCopy2)")
             //- p
             //-   strong A $30 donation includes signed copy of Blue Mind book, Operation Get Out #LetTheWaterMoveYou silicone bracelet, Blue Marble talisman, and shipping.
 
@@ -157,10 +156,10 @@
       b-container
         b-row
           b-col.text-center
-            h2.text-white.mb-4 We help those in need
+            h2.text-white.mb-4 {{ page.testimonialsHeadline }}
             h4.text-white.mb-5(
               style="font-size: 24px; font-weight: 400"
-            ) We have worked with first responders, military, women, foster children, struggling youth, and individuals battling illness, grief, loss, PTS, anxiety and depression – all who continue to share amazing testimonies of how nature and water has moved, unlocked, and refreshed them.
+            ) {{ page.testimonialsSubHeadline }}
 
         b-row
           b-col.mb-4.mb-md-0(
