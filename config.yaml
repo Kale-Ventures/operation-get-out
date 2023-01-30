@@ -45,3 +45,24 @@ collections:
     fields:
       { label: Name, name: name, widget: string }
       { label: Bio, name: bio, widget: string }
+
+  - label: Events
+    name: events
+    editor:
+      preview: false
+    label_singular: Event
+    format: frontmatter
+    folder: content/events
+    file: 'content/events.md'
+    preview_path: /
+    create: true
+    identifier_field: name
+    fields:
+      { label: Date Start (Day), name: dateStart, widget: datetime }
+      { label: Date End (Day), name: dateEnd, widget: datetime }
+      { label: Title, name: title, widget: string }
+      { label: Location, name: location, widget: string }
+      { label: Image, name: image, widget: image }
+      { label: Button Text, name: buttonText, widget: string }
+      { label: Button Url, name: url, widget: string }
+      { label: Body, name: body, widget: markdown }

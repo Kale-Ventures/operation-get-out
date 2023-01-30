@@ -318,13 +318,18 @@
 <script>
 export default {
   async asyncData ({ $content }) {
-    const teamMembers = await $content('team-members').fetch()
-
     const page = await $content('home').fetch()
 
+    const teamMembers = await $content('team-members').fetch()
+
+    const events = await $content('events')
+      .sortBy('dateStart', 'asc')
+      .fetch()
+
     return {
+      page,
       teamMembers,
-      page
+      events
     }
   },
   data () {
@@ -340,35 +345,6 @@ export default {
         { value: 'Corporate Wellness Alignment', text: 'Corporate Wellness Alignment' },
         { value: 'All of the Above', text: 'All of the Above' },
         { value: 'Other', text: 'Other' }
-      ],
-      events: [
-        {
-          date: 'March 15-19, 2023',
-          title: 'Boat, Bike & Board Weekend, Gran Fondo Hincapie',
-          location: 'Merced, CA',
-          body: "Introducing our first of five collaborative weekends with Hincapie Sports, Centurion Boats, Ventum Bikes, Ski Dock and Blue Surf - a destination Get Out for first responders, military, front line workers and/or caregivers. Merced's event will include use of custom Ventum bike for training and event plus: \n\n * Wednesday: Travel day (complimentary travel voucher for out of town participants) \n\n* Thursday: VIP Centurion Boats Factory Tour, OGO group Wake Surf outing, lakeside VIP dinner \n\n* Friday: Gran Fondo Merced expo and Ventum bike fit \n\n* Saturday registration to Gran Fondo with after party and festival. \n\n* Sunday: Travel day",
-          image: 'Merced',
-          buttonText: 'Register',
-          url: 'https://www.betterunite.com/OperationGetOut-9thannualgetoutgirlsurfpaddlejamweekend'
-        },
-        {
-          date: 'September 16-17, 2023',
-          title: 'Get Out Girl Surf & Paddle Jam Weekend',
-          location: 'Lake Austin, TX',
-          body: '_An all-female weekend sharing #bluemindsisterhood! Wakesurf Saturday, Paddle Jam Sunday and weekend after party with food, DJ Coy, Boss Jaguar Surf Band, silent and live auctions with family and friends!_ \n\n Camaraderie, inspiration, and empowerment with amazing like-minded women paddling in memory and honor of Travis County first responders Kristin McLain &amp; Jessica Hollis. All proceeds provide nature and water events, experiences and equipment for front-line workers, military, nurses, surviving family and agencies through Operation Get Out, a 501c3 nonprofit.',
-          image: 'surf',
-          buttonText: 'Register',
-          url: 'https://www.betterunite.com/OperationGetOut-9thannualgetoutgirlsurfpaddlejamweekend'
-        },
-        {
-          date: 'October 6-8, 2023',
-          title: 'OpGetOut First Responder & Military Retreat',
-          location: 'Canyon Lake, TX',
-          body: "A weekend retreat providing nature and water experiences with boating, wake surfing, lakeside yoga, and paddleboarding, good food and good music for front line responders and military at the beautiful Canyon Lakeview Resort, Canyon Lake, Texas. Donations and sponsorships fully fund participants' registration. To request complimentary registration or receive further information, email cindy@operationgetout.org",
-          image: 'military',
-          buttonText: 'Register',
-          url: 'https://betterunite.com/OperationGetOut-operationgetoutfallretreat2022'
-        }
       ]
     }
   }

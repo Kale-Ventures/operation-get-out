@@ -16,12 +16,9 @@
       lg="8"
     )
       .px-4.py-4.d-flex.flex-column.fill-height
-        h5.date {{ event.date }}
+        h5.date {{ $dayjs(event.dateStart).format("MMMM D") }} - {{ $dayjs(event.dateEnd).format("D, YYYY") }}
         h4 {{ event.title }}
-        .mb-4
-          div(
-            v-html="$md.render(event.body)"
-          )
+        nuxt-content(:document="event").mb-4
         b-row.mt-auto(
           align-h="between"
         )
