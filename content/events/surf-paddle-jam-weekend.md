@@ -3,7 +3,7 @@ dateStart: '09-16-2023'
 dateEnd: '09-17-2023'
 title: 'Get Out Girl Surf & Paddle Jam Weekend'
 location: 'Lake Austin, TX'
-image: 'surf'
+image: 'surf.jpg'
 buttonText: 'Register'
 url: 'https://www.betterunite.com/OperationGetOut-9thannualgetoutgirlsurfpaddlejamweekend'
 ---

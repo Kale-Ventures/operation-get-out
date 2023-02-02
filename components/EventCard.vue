@@ -7,7 +7,7 @@
       lg="4"
     )
       .image(
-        :style="`background-image: url('/images/${event.image}.jpg')`"
+        :style="`background-image: url('/images/${event.image}')`"
       )
 
     b-col(
