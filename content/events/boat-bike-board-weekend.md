@@ -7,7 +7,7 @@ image: 'bike-boat-board.png'
 buttonText: 'Register'
 url: 'https://www.betterunite.com/OperationGetOut-9thannualgetoutgirlsurfpaddlejamweekend'
 ---
-Introducing our first of five collaborative weekends with Hincapie Sports, Centurion Boats, Ventum Bikes, Ski Dock and Blue Surf - a destination Get Out for first responders, military, front line workers and/or caregivers. Merced's event will include use of custom Ventum bike for training and event plus:
+Introducing our first of five collaborative weekends with Hincapie Sports, Centurion Boats, Ventum Bikes, Ski Dock and Blue Surf - a destination Get Out for first responders, military, front line workers and/or caregivers. Chattanooga’s event will include use of custom Ventum bike for training and event plus:
 
 * Wednesday: Travel day
 
