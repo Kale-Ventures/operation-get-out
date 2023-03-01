@@ -26,7 +26,7 @@ b-navbar.px-0(
   )
     b-navbar-nav.ml-auto.d-flex.align-items-end
       b-nav-item(
-        to="#our-story"
+
       ) Our Story
       b-nav-item(
         to="/upcoming-events"

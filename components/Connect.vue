@@ -105,7 +105,7 @@
 
 <style lang="scss" scoped>
 
-.connect {
+section.connect {
   padding-top: 60px;
   padding-bottom: 60px;
 }
