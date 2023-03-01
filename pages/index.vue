@@ -203,14 +203,9 @@ export default {
 
     const teamMembers = await $content('team-members').fetch()
 
-    const events = await $content('events')
-      .sortBy('dateStart', 'asc')
-      .fetch()
-
     return {
       page,
-      teamMembers,
-      events
+      teamMembers
     }
   },
   data () {

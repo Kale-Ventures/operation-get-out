@@ -13,8 +13,13 @@
 
     section.events
       b-container
-        b-row.pt-4.pt-md-5
+        b-row.pt-4.pt-md-4
           b-col
+            PastEventCard(
+              v-for="(event, index) in events"
+              :key="index"
+              :event="event"
+            )
 
     section.to-upcoming-events
       b-container
@@ -49,7 +54,7 @@
 <script>
 export default {
   async asyncData ({ $content }) {
-    const events = await $content('events')
+    const events = await $content('upcoming-events')
       .sortBy('dateStart', 'asc')
       .fetch()
 

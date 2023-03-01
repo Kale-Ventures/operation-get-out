@@ -27,7 +27,7 @@
       b-container
         b-row.pt-4.pt-md-5
           b-col
-            EventCard(
+            UpcomingEventCard(
               v-for="(event, index) in events"
               :key="index"
               :event="event"
@@ -66,7 +66,7 @@
 <script>
 export default {
   async asyncData ({ $content }) {
-    const events = await $content('events')
+    const events = await $content('upcoming-events')
       .sortBy('dateStart', 'asc')
       .fetch()
 
