@@ -76,7 +76,7 @@
                       ) Events
                       div(v-html="$md.render(page.eventsCopy)")
                       b-btn(
-                        href='#events'
+                        to="/upcoming-events"
                         variant="tertiary"
                       ) See Events
 

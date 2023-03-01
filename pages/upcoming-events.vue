@@ -2,7 +2,7 @@
   main
     section.hero
       b-container
-        b-row.hero-row(
+        b-row.hero-row.px-4.px-md-0.pt-2.pt-md-5(
           align-v="center"
         )
           b-col(
@@ -15,7 +15,7 @@
       style="background-color: #eaf7ff"
     )
       b-container
-        b-row.bg-tertiary.text-white.py-4.px-5.text-row(
+        b-row.bg-tertiary.text-white.py-4.px-4.px-md-5.text-row(
           align-v="center"
         )
           b-col(
@@ -25,11 +25,7 @@
 
     section.events
       b-container
-        b-row
-          b-col.text-center
-            h2.text-tertiary.mb-5 Upcoming Events
-
-        b-row
+        b-row.pt-4.pt-md-5
           b-col
             EventCard(
               v-for="(event, index) in events"
@@ -83,7 +79,7 @@ export default {
 
 <style lang="scss" scoped>
 
-.hero {
+section.hero {
   background-image: url('/images/upcoming-events/kayak_hero.jpg');
   background-size: cover;
   background-position: center;
@@ -96,21 +92,20 @@ export default {
   min-height: 345px;
 }
 
-.banner {
-  margin-top: -45px;
+section.banner {
+  margin-top: -50px;
   .text-row {
     position: relative;
     z-index: 10;
   }
 }
 
-.events {
+section.events {
   background-color: #eaf7ff;
-  padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.to-past-events {
+section.to-past-events {
   background-color: #eaf7ff;
   padding-top: 10px;
   padding-bottom: 60px;
