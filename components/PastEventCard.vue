@@ -34,9 +34,13 @@
       b-col(
         cols="12"
       )
-        b-btn(
-          @click="isGalleryOpen = true"
-        ) See the full image gallery &nbsp; &gt;
+        .d-flex
+          b-btn.bg-primary(
+            @click="isGalleryOpen = true"
+          ) See the full image gallery
+          b-img-lazy(
+            src="/images/past-events/gt.svg"
+          )
         b-modal(
           v-model="isGalleryOpen"
           hide-footer
@@ -47,24 +51,48 @@
           b-container
             b-row
               b-col
-                h4 Event Name Excepteur Sint Occaecat Cupidatat
+                h4.mb-3 Event Name Excepteur Sint Occaecat Cupidatat
+
             b-row
               b-col
                 b-carousel(
-                  id="carousel-1"
-                  :interval="2000"
-                  img-width="1024"
-                  img-height="480"
+                  ref="carousel1"
+                  :interval="4000"
                 )
                   b-carousel-slide(
-                    img-src="/images/blank_image.jpg"
+                    style="width: 500px; height: 300px;"
+                    v-for="(image, index) in event.images"
+                    :key="index"
+                    :img-src="image"
                   )
-                  b-carousel-slide(
-                    img-src="/images/bike.jpg"
+
+            b-row
+              b-col(
+                v-for="(image, index) in event.images"
+                :key="index"
+                cols="3"
+              )
+                button(
+                  @click="selectSlide(index)"
+                )
+                  b-img-lazy.image(
+                    fluid
+                    :src="image"
                   )
-                  b-carousel-slide(
-                    img-src="/images/donations.jpg"
-                  )
+
+            nuxt-link(
+              to="/image-gallery"
+              style="text-decoration: none;"
+            )
+              b-row(
+                align-h="center"
+              )
+                b-col
+                  .d-flex.align-items-center.justify-content-center.mt-3
+                    h5.text-primary.text-uppercase.pt-2 See The Full Image Gallery
+                    b-img-lazy.pl-3.pb-1(
+                      src="/images/past-events/vector.svg"
+                    )
 
 </template>
 
@@ -81,27 +109,26 @@ export default {
     return {
       isGalleryOpen: false
     }
+  },
+  methods: {
+    selectSlide (index) {
+      this.$refs.carousel1.setSlide(index)
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-a {
-  text-transform: uppercase;
-  font-size: 14px;
-  color: $secondary;
-  font-weight: 600;
-}
 
 .image {
-  min-height: 120px;
-  min-width: 180px;
-  margin-top: 10px;
+  height: 120px;
+  width: 180px;
+  margin-top: 20px;
 }
 
-::v-deep em {
-  font-weight: 500;
-  color: $tertiary;
+button {
+  background-color: white;
+  border: none;
 }
 
 </style>

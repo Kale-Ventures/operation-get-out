@@ -8,5 +8,9 @@ images:
   - /images/book.jpg
   - /images/donations.jpg
   - /images/events.jpg
+  - /images/blank_image.jpg
+  - /images/donations.jpg
+  - /images/surf.jpg
+  - /images/military.jpg
 ---
 Event recap or summary lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
