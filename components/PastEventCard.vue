@@ -31,16 +31,17 @@
         )
 
     b-row.px-4.px-md-5.bg-primary
-      b-col(
+      b-col.py-2(
         cols="12"
       )
         .d-flex
-          b-btn.bg-primary(
+          button.bg-primary(
             @click="isGalleryOpen = true"
           ) See the full image gallery
-          b-img-lazy(
-            src="/images/past-events/gt.svg"
-          )
+            b-img-lazy.pl-3.pb-1(
+              src="/images/past-events/gt.svg"
+            )
+
         b-modal(
           v-model="isGalleryOpen"
           hide-footer
@@ -65,6 +66,34 @@
                     :key="index"
                     :img-src="image"
                   )
+
+            b-row
+              b-col(
+                cols="6"
+              )
+                .d-flex.justify-content-start
+                  button.mt-3.mb-2(
+                    @click="previousSlide"
+                  )
+                    b-img-lazy(
+                      src="/images/past-events/prev_arrow.svg"
+                    )
+                    b-img-lazy.pl-3(
+                      src="/images/past-events/PREVIOUS.svg"
+                    )
+              b-col(
+                cols="6"
+              )
+                .d-flex.justify-content-end
+                  button.mt-3.mb-2(
+                    @click="nextSlide"
+                  )
+                    b-img-lazy.pr-3(
+                      src="/images/past-events/NEXT.svg"
+                    )
+                    b-img-lazy(
+                      src="/images/past-events/next_arrow.svg"
+                    )
 
             b-row
               b-col(
@@ -113,6 +142,12 @@ export default {
   methods: {
     selectSlide (index) {
       this.$refs.carousel1.setSlide(index)
+    },
+    previousSlide () {
+      this.$refs.carousel1.prev()
+    },
+    nextSlide () {
+      this.$refs.carousel1.next()
     }
   }
 }
@@ -129,6 +164,8 @@ export default {
 button {
   background-color: white;
   border: none;
+  letter-spacing: 1.05px;
+  color: white;
 }
 
 </style>
