@@ -54,7 +54,7 @@
 <script>
 export default {
   async asyncData ({ $content }) {
-    const events = await $content('upcoming-events')
+    const events = await $content('past-events')
       .sortBy('dateStart', 'asc')
       .fetch()
 

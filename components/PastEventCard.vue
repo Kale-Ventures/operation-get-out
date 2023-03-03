@@ -5,91 +5,66 @@
       b-col(
         cols="12"
       )
-        h4 Event Name Excepteur Sint Occaecat Cupidatat
-        p.mb-4 Event recap or summary lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+        h4 {{event.headline}}
+        nuxt-content.mb-4(:document="event")
         p(
           style="font-size: 18px;"
         )
           strong.text-uppercase.text-secondary Dates:&nbsp;
-          | February 16-18, 2023
+          | {{ $dayjs(event.dateStart).format("MMMM D") }} - {{ $dayjs(event.dateEnd).format("D, YYYY") }}
         p(
           style="font-size: 18px;"
         )
           strong.text-uppercase.text-secondary Location:&nbsp;
-          | Chattanooga, TN
+          | {{event.location}}
 
-    b-row.px-4.px-md-5.pb-5.bg-white(
-    )
+    b-row.px-4.px-md-5.pb-5.bg-white
       b-col(
+        v-for="(image, index) in event.images"
+        :key="index"
         cols="6"
         lg="3"
       )
         b-img-lazy.image(
           fluid
-          src="/images/blank_image.jpg"
-        )
-      b-col(
-        cols="6"
-        lg="3"
-      )
-        b-img-lazy.image(
-          fluid
-          src="/images/blank_image.jpg"
-        )
-      b-col(
-        cols="6"
-        lg="3"
-      )
-        b-img-lazy.image(
-          fluid
-          src="/images/blank_image.jpg"
-        )
-      b-col(
-        cols="6"
-        lg="3"
-      )
-        b-img-lazy.image(
-          fluid
-          src="/images/blank_image.jpg"
-        )
-      b-col(
-        cols="6"
-        lg="3"
-      )
-        b-img-lazy.image(
-          fluid
-          src="/images/blank_image.jpg"
-        )
-      b-col(
-        cols="6"
-        lg="3"
-      )
-        b-img-lazy.image(
-          fluid
-          src="/images/blank_image.jpg"
-        )
-      b-col(
-        cols="6"
-        lg="3"
-      )
-        b-img-lazy.image(
-          fluid
-          src="/images/blank_image.jpg"
-        )
-      b-col(
-        cols="6"
-        lg="3"
-      )
-        b-img-lazy.image(
-          fluid
-          src="/images/blank_image.jpg"
+          :src="image"
         )
 
     b-row.px-4.px-md-5.bg-primary
       b-col(
         cols="12"
       )
-        h5.text-white.pt-2 See the full image gallery &gt;
+        b-btn(
+          @click="isGalleryOpen = true"
+        ) See the full image gallery &nbsp; &gt;
+        b-modal(
+          v-model="isGalleryOpen"
+          hide-footer
+          hide-header
+          centered
+          static
+        )
+          b-container
+            b-row
+              b-col
+                h4 Event Name Excepteur Sint Occaecat Cupidatat
+            b-row
+              b-col
+                b-carousel(
+                  id="carousel-1"
+                  :interval="2000"
+                  img-width="1024"
+                  img-height="480"
+                )
+                  b-carousel-slide(
+                    img-src="/images/blank_image.jpg"
+                  )
+                  b-carousel-slide(
+                    img-src="/images/bike.jpg"
+                  )
+                  b-carousel-slide(
+                    img-src="/images/donations.jpg"
+                  )
 
 </template>
 
@@ -100,6 +75,11 @@ export default {
     event: {
       type: Object,
       required: true
+    }
+  },
+  data () {
+    return {
+      isGalleryOpen: false
     }
   }
 }
@@ -116,11 +96,12 @@ a {
 .image {
   min-height: 120px;
   min-width: 180px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 ::v-deep em {
   font-weight: 500;
   color: $tertiary;
 }
+
 </style>
