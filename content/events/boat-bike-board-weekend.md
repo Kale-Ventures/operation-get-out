@@ -1,6 +1,6 @@
 ---
-dateStart: '05-03-2023'
-dateEnd: '05-07-2023'
+dateStart: '2023-05-03'
+dateEnd: '2023-05-07'
 title: 'Boat, Bike & Board Weekend, Gran Fondo Hincapie'
 location: 'Chattanooga, TN'
 image: 'bike-boat-board.png'

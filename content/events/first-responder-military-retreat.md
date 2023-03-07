@@ -1,6 +1,6 @@
 ---
-dateStart: '10-06-2023'
-dateEnd: '10-08-2023'
+dateStart: '2023-10-06'
+dateEnd: '2023-10-08'
 title: 'OpGetOut First Responder & Military Retreat'
 location: 'Canyon Lake, TX'
 image: 'military.jpg'

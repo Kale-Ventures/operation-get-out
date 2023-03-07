@@ -67,7 +67,7 @@
 export default {
   async asyncData ({ $content }) {
     const events = await $content('events')
-      .where({ dateStart: { $gt: new Date() }, dateEnd: { $gt: new Date() } })
+      .where({ dateStart: { $gt: new Date().toISOString() } })
       .sortBy('dateStart', 'asc')
       .fetch()
 
