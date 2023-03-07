@@ -66,7 +66,8 @@
 <script>
 export default {
   async asyncData ({ $content }) {
-    const events = await $content('upcoming-events')
+    const events = await $content('events')
+      .where({ dateStart: { $gt: new Date() }, dateEnd: { $gt: new Date() } })
       .sortBy('dateStart', 'asc')
       .fetch()
 

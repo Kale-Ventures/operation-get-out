@@ -54,7 +54,8 @@
 <script>
 export default {
   async asyncData ({ $content }) {
-    const events = await $content('past-events')
+    const events = await $content('events')
+      .where({ dateStart: { $lt: new Date() }, dateEnd: { $lt: new Date() } })
       .sortBy('dateStart', 'asc')
       .fetch()
 
