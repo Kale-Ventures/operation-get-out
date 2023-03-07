@@ -1,32 +1,24 @@
 <template lang="pug">
-b-navbar.px-0(
+b-navbar.p-0(
   sticky
   toggleable="lg"
 )
-  //- b-navbar-toggle(
-  //-   target="nav-collapse"
-  //- )
-  //-   b-img(
-  //-     src="/svgs/hamburger.svg"
-  //-     width="40"
-  //-     height="24"
-  //-   )
-  b-navbar-brand.ml-4(
+  b-navbar-brand.ml-4.my-2(
     to="/"
   )
     b-img(
       src="/images/logo.png"
       height="30"
     )
-  b-navbar-toggle.mr-3.mr-md-0(
-      target="nav-collapse"
-    )
+  b-navbar-toggle.mr-3.mr-md-0.my-2(
+    target="nav-collapse"
+  )
   b-collapse#nav-collapse.ml-auto.px-3.px-lg-0(
     is-nav
   )
-    b-navbar-nav.ml-auto.d-flex.align-items-end
+    b-navbar-nav.ml-auto.d-flex.align-items-center
       b-nav-item(
-
+        href='/#our-story'
       ) Our Story
       b-nav-item(
         to="/upcoming-events"
@@ -44,8 +36,19 @@ b-navbar.px-0(
 </template>
 
 <style lang="scss" scoped>
+.navbar-collapse {
+  @include media-breakpoint-down(md) {
+    background-color: $tertiary;
+    padding: 20px 0;
+  }
+}
+
 .navbar {
   background-color: rgba(255, 255, 255, 0.85);
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 0;
+  }
 
   li a {
     font-size: 18px;
@@ -53,23 +56,24 @@ b-navbar.px-0(
   }
 }
 
-::v-deep .nav-item {
-  @include media-breakpoint-down(md) {
-    width: 50%;
-    text-align: flex-start;
-    background-color: #004883;
-    padding-left: 3em;
-  }
-}
-
 ::v-deep .nav-link {
-  text-transform: none;
   font-size: 20px;
-  color: white;
   margin-right: 25px;
+
+  @include media-breakpoint-down(md) {
+    color: white !important;
+  }
 }
 
 ::v-deep .navbar-toggler {
   border: none;
+}
+
+::v-deep .nuxt-link-active {
+  font-weight: 600;
+
+  @include media-breakpoint-up(lg) {
+    color: $tertiary !important;
+  }
 }
 </style>
