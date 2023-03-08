@@ -61,7 +61,7 @@ container
                 ref="carousel1"
                 :interval="4000"
               )
-                b-carousel-slide(
+                b-carousel-slide.carousel-img(
                   v-for="(image, index) in event.images"
                   :key="index"
                   :img-src="image"
@@ -157,12 +157,17 @@ export default {
   object-fit: cover;
   height: 60px;
   width: 90px;
+  margin-right: 3px;
 }
 
 .upper-image {
   margin-bottom: 32px;
   object-fit: cover;
-  height: 160px;
+  height: 200px;
+}
+
+.carousel-img {
+  height: 520px;
 }
 
 button {
