@@ -73,8 +73,8 @@ collections:
     create: true
     identifier_field: name
     fields:
-      - { label: Date Start (Day), name: dateStart, widget: datetime }
-      - { label: Date End (Day), name: dateEnd, widget: datetime }
+      - { label: Date Start (Day), name: dateStart, widget: datetime, format: 'YYYY-MM-DD' }
+      - { label: Date End (Day), name: dateEnd, widget: datetime, format: 'YYYY-MM-DD' }
       - { label: Title, name: title, widget: string }
       - { label: Location, name: location, widget: string }
       - { label: Image, name: image, widget: image }
@@ -87,5 +87,6 @@ collections:
         name: images
         label_singular: image
         widget: list
-        fields:
-          - { label: , name: , widget: image }
+        max: 8
+        field:
+          - { label: Image , name: image, widget: image }
