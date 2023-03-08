@@ -1,5 +1,5 @@
 ---
-headline: 'Event Name Excepteur Sint Occaecat Cupidatat'
+title: 'Event Name Excepteur Sint Occaecat Cupidatat'
 dateStart: '2023-02-16'
 dateEnd: '2023-02-18'
 location: 'Chattanooga, TN'
