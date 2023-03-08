@@ -3,7 +3,7 @@ dateStart: '2023-05-03'
 dateEnd: '2023-05-07'
 title: 'Boat, Bike & Board Weekend, Gran Fondo Hincapie'
 location: 'Chattanooga, TN'
-image: 'bike-boat-board.png'
+image: '/images/uploads/bike-boat-board.png'
 buttonText: 'Register'
 url: 'https://www.betterunite.com/OperationGetOut-9thannualgetoutgirlsurfpaddlejamweekend'
 ---

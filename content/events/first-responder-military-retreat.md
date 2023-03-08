@@ -3,7 +3,7 @@ dateStart: '2023-10-06'
 dateEnd: '2023-10-08'
 title: 'OpGetOut First Responder & Military Retreat'
 location: 'Canyon Lake, TX'
-image: 'military.jpg'
+image: '/images/uploads/military.jpg'
 buttonText: 'Register'
 url: 'https://betterunite.com/OperationGetOut-operationgetoutfallretreat2022'
 ---
