@@ -5,7 +5,7 @@ backend:
 media_folder: static/images/uploads
 public_folder: /images/uploads
 
-site_url:
+site_url: https://www.operationgetout.org/
 #logo_url:
 
 publish_mode: editorial_workflow
@@ -88,5 +88,5 @@ collections:
         label_singular: image
         widget: list
         max: 8
-        field:
+        fields:
           - { label: Image , name: image, widget: image }
