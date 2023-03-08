@@ -25,8 +25,8 @@
         cols="6"
         lg="3"
       )
-        b-img-lazy.image(
-          fluid
+        b-img-lazy.upper-image(
+          fluid-grow
           :src="image"
         )
 
@@ -48,6 +48,7 @@
           hide-header
           centered
           static
+          size='lg'
         )
           b-container
             b-row
@@ -61,7 +62,6 @@
                   :interval="4000"
                 )
                   b-carousel-slide(
-                    style="width: 500px; height: 300px;"
                     v-for="(image, index) in event.images"
                     :key="index"
                     :img-src="image"
@@ -95,19 +95,16 @@
                       src="/images/past-events/next_arrow.svg"
                     )
 
-            b-row
-              b-col(
+            .strip
+              button(
                 v-for="(image, index) in event.images"
                 :key="index"
-                cols="3"
+                @click="selectSlide(index)"
               )
-                button(
-                  @click="selectSlide(index)"
+                b-img-lazy.image(
+                  fluid
+                  :src="image"
                 )
-                  b-img-lazy.image(
-                    fluid
-                    :src="image"
-                  )
 
             nuxt-link(
               to="/image-gallery"
@@ -156,9 +153,16 @@ export default {
 <style lang="scss" scoped>
 
 .image {
-  height: 120px;
-  width: 180px;
-  margin-top: 20px;
+  margin-top: 10px;
+  object-fit: cover;
+  height: 60px;
+  width: 90px;
+}
+
+.upper-image {
+  margin-bottom: 32px;
+  object-fit: cover;
+  height: 160px;
 }
 
 button {
