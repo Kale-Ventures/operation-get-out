@@ -31,10 +31,12 @@
             )
               strong.text-uppercase.text-primary Location:&nbsp;
               | {{ event.location }}
-          //- b-col(
-          //-   cols="12"
-          //-   md="auto"
-          //- )
+
+          b-col(
+            v-if="event.url && event.buttonText"
+            cols="12"
+            md="auto"
+          )
             b-btn(
               :href='event.url'
             ) {{ event.buttonText }}

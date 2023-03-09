@@ -43,8 +43,6 @@ collections:
             fields:
               - { label: Quote, name: quote, widget: string }
               - { label: Attribution, name: attribution, widget: string }
-              - { label: Title, name: title, widget: string }
-              - { label: Subtitle, name: subtitle, widget: string }
 
   - label: Team
     name: team-members
@@ -78,9 +76,10 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Location, name: location, widget: string }
       - { label: Image, name: image, widget: image }
-      - { label: Button Text, name: buttonText, widget: string }
-      - { label: Button Url, name: url, widget: string }
-      - { label: Body, name: body, widget: markdown }
+      - { label: Button Text, name: buttonText, widget: string, required: false }
+      - { label: Button Url, name: url, widget: string, required: false  }
+      - { label: Body, name: body, widget: markdown, required: false  }
+      - { label: Image Gallery Link, name: imageGalleryLink, widget: string, required: false }
 
       - label: Images
         name: images

@@ -207,22 +207,6 @@ export default {
       page,
       teamMembers
     }
-  },
-  data () {
-    return {
-      selected: null,
-      options: [
-        { value: null, text: 'I\'m interested in...' },
-        { value: 'Event Information', text: 'Event Information' },
-        { value: 'Sponsorship opportunities', text: 'Sponsorship opportunities' },
-        { value: 'Donating Equipment and Food', text: 'Donating Equipment and Food' },
-        { value: 'Hosting a Get Out', text: 'Hosting a Get Out' },
-        { value: 'Volunteering', text: 'Volunteering' },
-        { value: 'Corporate Wellness Alignment', text: 'Corporate Wellness Alignment' },
-        { value: 'All of the Above', text: 'All of the Above' },
-        { value: 'Other', text: 'Other' }
-      ]
-    }
   }
 }
 </script>

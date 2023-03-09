@@ -33,6 +33,9 @@ p a {
   font-size: 21px;
 }
 
+.clickable {
+  cursor: pointer;
+}
 
 h1, .h1 {
   font-weight: 400;
@@ -61,6 +64,8 @@ h5, .h5 {
 
 .link-reset {
   color: unset;
+  text-decoration: none;
+  text-transform: none;
 }
 
 .headings-font-family {
