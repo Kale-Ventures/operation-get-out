@@ -201,7 +201,7 @@ export default {
   async asyncData ({ $content }) {
     const page = await $content('home').fetch()
 
-    const teamMembers = await $content('team-members').fetch()
+    const teamMembers = await $content('team-members').sortBy('name').fetch()
 
     return {
       page,
