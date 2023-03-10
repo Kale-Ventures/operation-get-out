@@ -1,7 +1,7 @@
 <template lang="pug">
 b-card.text-center.team-member.fill-height(
   border-variant="light"
-  :img-src="`/images/headshots/${member.name}.jpg`"
+  :img-src="member.image"
 )
   h4.text-tertiary {{ member.name }}
   a(

@@ -27,7 +27,7 @@ b-navbar.p-0(
         to="/past-events"
       ) Past Events
       b-nav-item(
-        to="#connect"
+        to="/#connect"
       ) Connect
       b-nav-item(
         to="#XRDHRHMF"

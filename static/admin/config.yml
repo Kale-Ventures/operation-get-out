@@ -23,9 +23,7 @@ collections:
         fields:
           - { label: Header Headline, name: headerHeadline, widget: string }
           - { label: Header Sub Headline, name: headerSubHeadline, widget: string }
-          - { label: Who We Are Paragraph 1, name: whoWeAreCopy1, widget: markdown }
-          - { label: Who We Are Paragraph 2, name: whoWeAreCopy2, widget: markdown }
-          - { label: Who We Are Paragraph 3, name: whoWeAreCopy3, widget: markdown }
+          - { label: Who We Are Paragraph, name: whoWeAreCopy, widget: markdown }
           - { label: Events Paragraph, name: eventsCopy, widget: markdown }
           - { label: Donations Paragraph, name: donationsCopy, widget: markdown }
           - { label: Our Story Eyebrow, name: ourStoryEyebrow, widget: string }
@@ -58,6 +56,7 @@ collections:
     fields:
       - { label: Name, name: name, widget: string }
       - { label: Bio, name: bio, widget: text }
+      - { label: Image, name: image, widget: image, hint: "400x500 pixels" }
 
   - label: Events
     name: events

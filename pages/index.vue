@@ -49,9 +49,7 @@
               src='/images/logo-short.svg'
             )
             h2.text-tertiary.mb-4 Who We Are
-            div.h5.mb-4(v-html="$md.render(page.whoWeAreCopy1)")
-            div.text-tertiary.h5.mb-4(v-html="$md.render(page.whoWeAreCopy2)")
-            div.h5.mb-4(v-html="$md.render(page.whoWeAreCopy3)")
+            div.h5.mb-4(v-html="$md.render(page.whoWeAreCopy)")
 
       .bg-primary
         b-container
