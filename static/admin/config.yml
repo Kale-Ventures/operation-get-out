@@ -85,5 +85,6 @@ collections:
         label_singular: image
         widget: list
         max: 8
+        required: false
         fields:
           - { label: Image , name: image, widget: image }
