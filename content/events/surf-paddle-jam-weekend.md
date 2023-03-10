@@ -1,6 +1,6 @@
 ---
-dateStart: '2023-09-16'
-dateEnd: '2023-09-17'
+dateStart: '2023-09-23'
+dateEnd: '2023-09-24'
 title: 'Get Out Girl Surf & Paddle Jam Weekend'
 location: 'Lake Austin, TX'
 image: '/images/uploads/surf.jpg'
