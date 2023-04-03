@@ -1,11 +1,11 @@
 ---
-dateStart: '2023-09-23'
-dateEnd: '2023-09-24'
-title: 'Get Out Girl Surf & Paddle Jam Weekend'
-location: 'Lake Austin, TX'
-image: '/images/uploads/surf.jpg'
-buttonText: 'Register'
-url: 'https://www.betterunite.com/OperationGetOut-9thannualgetoutgirlsurfpaddlejamweekend'
+dateStart: 2023-09-23
+dateEnd: 2023-09-24
+title: Get Out Girl Surf & Paddle Jam Weekend
+location: Lake Austin, TX
+image: /images/uploads/surf.jpg
+buttonText: ""
+url: ""
 ---
 An all-female weekend sharing #bluemindsisterhood! Wakesurf Saturday, Paddle Jam Sunday and weekend after party with food, DJ Coy, Boss Jaguar Surf Band, silent and live auctions with family and friends!
 
