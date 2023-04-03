@@ -1,11 +1,11 @@
 ---
-dateStart: '2023-05-03'
-dateEnd: '2023-05-07'
-title: 'Boat, Bike & Board Weekend, Gran Fondo Hincapie'
-location: 'Chattanooga, TN'
-image: '/images/uploads/bike-boat-board.png'
-buttonText: 'Register'
-url: 'https://www.betterunite.com/OperationGetOut-9thannualgetoutgirlsurfpaddlejamweekend'
+dateStart: 2023-05-03
+dateEnd: 2023-05-07
+title: Boat, Bike & Board Weekend, Gran Fondo Hincapie
+location: Chattanooga, TN
+image: /images/uploads/bike-boat-board.png
+buttonText: Information
+url: cindy@operationgetout.org
 ---
 Introducing our first of five collaborative weekends with Hincapie Sports, Centurion Boats, Ventum Bikes, Ski Dock and Blue Surf - a destination Get Out for first responders, military, front line workers and/or caregivers. Chattanooga’s event will include use of custom Ventum bike for training and event plus:
 
