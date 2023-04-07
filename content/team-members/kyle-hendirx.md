@@ -1,5 +1,5 @@
 ---
-name: Kyle Hendirx
+name: Kyle Hendrix
 bio: With his positive spirt and love of the outdoors, Kyle began his journey
   with us as a volunteer and soon moved to an OGO Ambassador. After using
   water-based therapies to heal from a CNS injury, he is living proof of the
