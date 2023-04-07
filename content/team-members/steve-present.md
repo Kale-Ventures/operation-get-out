@@ -11,5 +11,5 @@ bio: Steve has over 40 years in the marine and watersports industry and was
   mountain biker, and has received numerous awards and recognition for his role
   and leadership in the watersports industry, including Centurion Boats Troy
   Gentry Award and Water Warrior recipient.
-image: /images/uploads/img_0332.jpg
+image: /images/uploads/untitled-design-1-.png
 ---
