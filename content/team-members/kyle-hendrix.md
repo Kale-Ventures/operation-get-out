@@ -8,5 +8,5 @@ bio: With his positive spirit and love of the outdoors, Kyle began his journey
   and kayak guide as well as a boat captain, fishing guide and fitness
   instructor. When Kyle's not supporting Team OGO, he can be found mountain
   biking, camping, paddleboarding, and exploring nature's beauty.
-image: /images/uploads/untitled-design.png
+image: /images/uploads/untitled-design-3-.png
 ---
