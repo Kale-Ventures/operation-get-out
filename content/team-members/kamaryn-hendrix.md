@@ -8,5 +8,5 @@ bio: Born and raised on the shores of Lake Austin, Kamaryn is a lifetime water
   the time. With countless hours on and off the water as both a life and
   watersports coach, Kamryn's largest passion is for guiding others to find
   their inner greatness.
-image: /images/uploads/resized_20221016_113502-01-1-.jpeg
+image: /images/uploads/untitled-design-2-.png
 ---
