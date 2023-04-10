@@ -3,12 +3,12 @@ main
   section.hero
     b-container
       b-row.hero-row.px-4.px-md-0.pt-2.pt-md-5(
-        align-v="center"
+        align-v="end"
       )
         b-col.pt-5(
-          cols="10"
+          cols="auto"
         )
-          h1.text-white.pt-5(
+          h1.text-white.title(
           ) Past Events
 
   section.events
@@ -69,10 +69,11 @@ export default {
 <style lang="scss" scoped>
 
 section.hero {
-  background-image: url('/images/past-events/paddleboard_hero.jpg');
+  background-image: url('/images/past-events/hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-bottom: 40px;
 }
 
 .hero-row {
@@ -90,4 +91,12 @@ section.to-upcoming-events {
   padding-bottom: 60px;
 }
 
+.title {
+  padding: 0 20px;
+  background-color: $tertiary;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 50px;
+  }
+}
 </style>
