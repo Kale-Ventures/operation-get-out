@@ -11,7 +11,7 @@ div
         style="font-size: 18px;"
       )
         strong.text-uppercase.text-secondary Dates:&nbsp;
-        | {{ $dayjs(event.dateStart).format("MMMM D") }} - {{ $dayjs(event.dateEnd).format("D, YYYY") }}
+        | {{ $dayjs(event.dateStart).add(1, 'day').format("MMMM D") }} - {{ $dayjs(event.dateEnd).add(1, 'day').format("D, YYYY") }}
       p(
         style="font-size: 18px;"
       )

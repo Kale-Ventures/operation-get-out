@@ -11,6 +11,6 @@ T﻿hree amazing days to Get Out, Get Active & Get Connected! OpGetOut hits the 
 
 * Wednesday: Travel day
 * Thursday: Boat & Board Day sponsored by Centurion Boats & BluSurf
-* Friday: Hincapie Gran Fondo Expo, Ventum Fit  , and paddleboard outing 
+* Friday: Hincapie Gran Fondo Expo, Ventum Fit  , and paddleboard outing
 * Saturday: Complimentary entry to Hincapie Gran Fondo Bike Event
 * Sunday: Travel day
