@@ -3,7 +3,7 @@ dateStart: 2023-05-03
 dateEnd: 2023-05-07
 title: Chattanooga Boat, Bike & Board Weekend, Gran Fondo Hincapie
 location: Tennessee
-image: /images/uploads/hincapiegranfondotn.jpg
+image: /images/uploads/hincapie-riders.jpg
 buttonText: ""
 url: ""
 ---
