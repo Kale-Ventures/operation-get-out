@@ -10,7 +10,7 @@ whoWeAreCopy: >-
   now an intentional, purposeful organization. 
 
 
-  **We plan and execute intentional experiences, events and outings that utilize evidence-based science: nature and water can be a powerful therapeutic benefit to assist individuals and agencies dealing with loss, PTS, anxiety, grief and stress.** 
+  **We plan and execute intentional experiences, events and outings that utilize evidence-based science: nature and water can be a powerful therapeutic benefit to assist individuals and agencies dealing with loss, PTS, anxiety, grief, trauma, and stress.**
 
 
   We witness the powerful unlocking and resetting that takes place when individuals are given the opportunity and tools to be empowered with the healing elements of nature and water.
