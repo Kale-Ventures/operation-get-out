@@ -1,5 +1,5 @@
 ---
-headerHeadline: Finding mental and physical wellness through nature and water.
+headerHeadline: Finding mental, physical & emotional wellness through nature and water.
 headerSubHeadline: OpGetOut was founded to provide the experiences and resources
   people need to intentionally utilize nature and water for positive mental and
   physical wellness.
