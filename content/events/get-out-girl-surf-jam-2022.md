@@ -6,5 +6,5 @@ location: Lake Austin, TX
 image: https://photos.google.com/share/AF1QipOCttyZTtfkbxsb_JzNGmHyWR100jPeVOIaptipiCDNa8amkzXrPOqp4ow78-ZVTA
 buttonText: ""
 url: ""
-imageGalleryLink: https://photos.google.com/share/AF1QipOCttyZTtfkbxsb_JzNGmHyWR100jPeVOIaptipiCDNa8amkzXrPOqp4ow78-ZVTA
+imageGalleryLink: https://photos.app.goo.gl/wvCv1vV7YX58Kaw77
 ---
