@@ -3,7 +3,7 @@ dateStart: 2023-06-03
 dateEnd: 2023-06-04
 title: Bikes For Kids Tellico Plains, TN
 location: Monroe County, Tennessee
-image: /images/uploads/b4ks-1-.png
+image: /images/uploads/b4k-tellico-plains-400-×-500-px-.png
 buttonText: DONATE
 url: https://www.betterunite.com/OperationGetOut-bikesforkidstellicoplainstn
 ---
