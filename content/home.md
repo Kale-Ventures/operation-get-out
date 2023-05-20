@@ -1,8 +1,10 @@
 ---
-headerHeadline: Finding mental, physical & emotional wellness through nature and water.
-headerSubHeadline: OpGetOut was founded to provide the experiences and resources
-  people need to intentionally utilize nature and water for positive mental and
-  physical wellness.
+headerHeadline: Providing mental, physical & emotional wellness impact through
+  the intentional use of nature and water.
+headerSubHeadline: "OpGetOut provides outings, events and resources that
+  intentionally utilize nature and water for positive mental, emotional and
+  physical wellness impact for individuals & organizations experiencing anxiety,
+  grief, loss, trauma and PTS. "
 whoWeAreCopy: >-
   OpGetOut is a 501c3 nonprofit with deep roots and connections in the wellness,
   water, military, first responder, medical and philanthropic world. What began
