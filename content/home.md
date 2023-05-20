@@ -1,6 +1,5 @@
 ---
-headerHeadline: Providing mental, physical & emotional wellness impact through
-  the intentional use of nature and water.
+headerHeadline: Providing wellness through the intentional use of nature and water.
 headerSubHeadline: "OpGetOut provides outings, events and resources that
   intentionally utilize nature and water for positive mental, emotional and
   physical wellness impact for individuals & organizations experiencing anxiety,
@@ -12,7 +11,7 @@ whoWeAreCopy: >-
   now an intentional, purposeful organization. 
 
 
-  **We plan and execute intentional experiences, events and outings that utilize evidence-based science: nature and water can be a powerful therapeutic benefit to assist individuals and agencies dealing with loss, PTS, anxiety, grief, trauma, and stress.**
+  **We plan and execute intentional experiences, events and outings that utilize evidence-based science: nature and water can be a powerful therapeutic benefit to assist individuals and o dealing with loss, PTS, anxiety, grief, trauma, and stress.**
 
 
   We witness the powerful unlocking and resetting that takes place when individuals are given the opportunity and tools to be empowered with the healing elements of nature and water.
