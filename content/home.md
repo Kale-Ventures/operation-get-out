@@ -1,5 +1,6 @@
 ---
-headerHeadline: Finding mental, physical & emotional wellness through nature and water.
+headerHeadline: Providing mental, physical & emotional wellness impact through
+  the intentional use of nature and water.
 headerSubHeadline: "OpGetOut provides outings, events and resources that
   intentionally utilize nature and water for positive mental, emotional and
   physical wellness impact for individuals & organizations experiencing anxiety,
