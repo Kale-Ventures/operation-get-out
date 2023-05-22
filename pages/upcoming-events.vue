@@ -5,10 +5,10 @@
         b-row.hero-row.px-4.px-md-0.pt-2.pt-md-5(
           align-v="center"
         )
-          b-col(
-            cols="12"
+          b-col.pt-5(
+            cols="auto"
           )
-            h1.text-white.pt-5(
+            h1.text-white.title(
             ) Upcoming Events
 
     section.banner.px-3(
@@ -81,7 +81,7 @@ export default {
 <style lang="scss" scoped>
 
 section.hero {
-  background-image: url('/images/upcoming-events/kayak_hero.jpg');
+  background-image: url('/images/upcoming-events/hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,6 +110,15 @@ section.to-past-events {
   background-color: #eaf7ff;
   padding-top: 10px;
   padding-bottom: 60px;
+}
+
+.title {
+  padding: 0 20px;
+  background-color: $tertiary;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 50px;
+  }
 }
 
 </style>
