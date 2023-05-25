@@ -3,11 +3,11 @@ dateStart: 2023-09-30
 dateEnd: 2023-10-01
 title: Get Out Girl Surf & Paddle Jam Weekend
 location: Lake Austin, TX
-image: /images/uploads/surf.jpg
+image: /images/uploads/cen_paddle_heli3-2-.jpg
 buttonText: ""
 url: ""
 ---
-***O﻿ur 10th Annual Event that any girl that loves the water does not want to miss!***
+***O﻿ur 10th Annual Event that any girl who loves the water does not want to miss!***
 
 Saturday, Surf Jam & Sunday Paddle Jam  and weekend after party with food, DJ Coy, Boss Jaguar Surf Band, silent and live auctions with family and friends! 
 
