@@ -25,21 +25,19 @@ main
         )
           b-img(
             fluid
-            src='/images/uploads/b4ks-1-.png'
+            src='/images/ogo.png'
           )
         b-col(
           cols="12"
           md="6"
           lg="7"
         )
-          h2.h3 Bikes for Kids
-          p There is nothing better than a bike to help children Get Out! Bikes are an inspiring tool for positive mental, physical and emotional wellness impact. The community of Tellico Plains, TN is the gateway for scenic mountain tours, yet nearly half of the community is living below poverty with similar percentages of obesity and low education attainment.
-          p Be part of the team that makes a difference in Tellico Plains to positively impact the wellness of these kids - and make an impact on the trajectory of their future!
-          p A huge thank you to our partners who share our same passion for Bikes For Kids: Hincapie Sports, WEDU, The Move, Haro Bikes, Mellow Johnny's, Ski Dock &amp; Centurion Boats!
+          h2.h3 Get Out Girl Surf &amp; Paddle Jam Weekend
+          p In our 10th year, this annual event honors female first responders, military, nurses and front line workers in honor and memory of part of the OpGetOut family - Travis County First Responders Kristin McLain and Jessica Hollis. A fun and inspirational weekend that utilizes nature and water to empower and connect women and girls of all ages.
           b-btn(
             variant="primary"
-            href='https://www.betterunite.com/OperationGetOut-bikesforkidstellicoplainstn'
-          ) Donate
+            href='https://www.betterunite.com/OperationGetOut-10thannualgetoutgirlsurfpaddlejamweekend'
+          ) Register
 
   section.who-we-are
     b-container
