@@ -23,9 +23,11 @@ main
           md="6"
           lg="5"
         )
-          b-img(
-            fluid
-            src='/images/ogo.png'
+          b-embed(
+            type="iframe"
+            aspect="16by9"
+            src="https://www.youtube.com/embed/3ym10OnlVtM"
+            allowfullscreen
           )
         b-col(
           cols="12"
