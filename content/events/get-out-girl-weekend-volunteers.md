@@ -1,5 +1,5 @@
 ---
-dateStart: 2023-09-30
+dateStart: 2023-10-01
 dateEnd: 2023-10-01
 title: Get Out Girl Weekend - VOLUNTEERS
 location: Lake Austin, TX
