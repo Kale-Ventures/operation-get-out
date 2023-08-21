@@ -5,6 +5,7 @@ title: Get Out Girl Weekend - VOLUNTEERS
 location: Lake Austin, TX
 image: /images/uploads/1n4a8984.jpg
 buttonText: VOLUNTEER SIGN UP
+url: https://www.betterunite.com/OperationGetOut-getoutgirlpaddlejam2023
 ---
 When's the last time you considered the life of a female first responder, military or nurse? Taking care of and/or protecting our community during shift, managing life and death situations, serving others gracefully and graciously. This is a great opportunity to return the favor and serve them in return.
 
