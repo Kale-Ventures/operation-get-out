@@ -4,7 +4,7 @@ dateEnd: 2023-10-01
 title: 10th Annual Get Out Girl Surf & Paddle Jam Weekend 2023, Photographer
   Simon Krenk
 location: Lake Austin, TX
-image: /images/uploads/cen_paddle_heli3-2-.jpg
+image: /images/uploads/slk_ogo_sup-47.jpg
 buttonText: Register
 url: https://www.betterunite.com/OperationGetOut-10thannualgetoutgirlsurfpaddlejamweekend
 imageGalleryLink: https://photos.google.com/share/AF1QipMWPzxXbMDVZQ5zF5seLvzj9O9rA7a2klggsTIpWXc5F6MHC3nozRoSD8KXPjS6SQ
