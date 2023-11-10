@@ -36,10 +36,6 @@ main
         )
           h2.h3 Get Out Girl Surf &amp; Paddle Jam Weekend
           p In our 10th year, this annual event honors female first responders, military, nurses and front line workers in honor and memory of part of the OpGetOut family - Travis County First Responders Kristin McLain and Jessica Hollis. A fun and inspirational weekend that utilizes nature and water to empower and connect women and girls of all ages.
-          b-btn(
-            variant="primary"
-            href='https://www.betterunite.com/OperationGetOut-10thannualgetoutgirlsurfpaddlejamweekend'
-          ) Register
 
   section.who-we-are
     b-container

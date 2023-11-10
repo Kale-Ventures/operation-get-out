@@ -11,7 +11,12 @@ div
         style="font-size: 18px;"
       )
         strong.text-uppercase.text-secondary Dates:&nbsp;
-        | {{ $dayjs(event.dateStart).add(1, 'day').format("MMMM D") }} - {{ $dayjs(event.dateEnd).add(1, 'day').format("D, YYYY") }}
+        span(
+          v-if="event.dateStart !== event.dateEnd"
+        ) {{ $dayjs(event.dateStart).add(1, 'day').format("MMMM D") }} - {{ $dayjs(event.dateEnd).add(1, 'day').format("D, YYYY") }}
+        span(
+          v-else
+        ) {{ $dayjs(event.dateStart).add(1, 'day').format("MMMM D, YYYY") }}
       p(
         style="font-size: 18px;"
       )
