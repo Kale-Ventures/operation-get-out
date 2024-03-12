@@ -1,6 +1,6 @@
 ---
 dateStart: 2024-02-18
-dateEnd: 2024-02-18
+dateEnd: 2024-03-12
 title: VOLUNTEER Austin Marathon with OpGetOut
 location: Austin, TX
 image: /images/uploads/run-for-opgetout-5-.png
