@@ -1,6 +1,6 @@
 ---
 dateStart: 2024-02-18
-dateEnd: 2024-02-18
+dateEnd: 2024-03-12
 title: Austin Marathon Weekend | Team OpGetOut
 location: Austin, TX
 image: /images/uploads/run-for-opgetout-4-.png
